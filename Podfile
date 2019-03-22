@@ -9,6 +9,7 @@ target 'Rijks Museum Explorer iOS' do
 pod 'MaterialComponents'
 pod 'KYDrawerController'
 pod 'Kingfisher'
+pod 'Alamofire', '~> 5.0.0-beta.3'
 
 
   target 'Rijks Museum Explorer iOSTests' do

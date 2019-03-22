@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "609EDC4064496225E159AAB6C44E4E41"
-               BuildableName = "Pods-Rijks Museum Explorer iOS.framework"
-               BlueprintName = "Pods-Rijks Museum Explorer iOS"
+               BlueprintIdentifier = "628DA498255215479ECAD389BEADB5E8"
+               BuildableName = "Alamofire.framework"
+               BlueprintName = "Alamofire"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

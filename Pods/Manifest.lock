@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.0.0-beta.3)
   - Kingfisher (5.2.0)
   - KYDrawerController (2.1.0)
   - MaterialComponents (79.1.1):
@@ -518,12 +519,14 @@ PODS:
   - MotionTransitioning (5.0.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.3)
   - Kingfisher
   - KYDrawerController
   - MaterialComponents
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - Kingfisher
     - KYDrawerController
     - MaterialComponents
@@ -534,6 +537,7 @@ SPEC REPOS:
     - MotionTransitioning
 
 SPEC CHECKSUMS:
+  Alamofire: 50d6fa7e8cbe7f84559e86ab641ffd029db655f8
   Kingfisher: 07067cfacf371117330dceb4b4b8f5c4b691ab42
   KYDrawerController: baad0e63b09c0cb564bd48f0f7f70f45d9176ebc
   MaterialComponents: 8b8a7a49da5b5c35bc8dab1173bb7d5f7a87b2f8
@@ -543,6 +547,6 @@ SPEC CHECKSUMS:
   MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
   MotionTransitioning: 23d25edc2f4606efb922403cbac6d81af37aa33a
 
-PODFILE CHECKSUM: 0ca142c74c321824eb30dca95733718c50af7446
+PODFILE CHECKSUM: 996125a52f8e4fb08afa8fd98667bf6cc2e6038f
 
 COCOAPODS: 1.6.1
