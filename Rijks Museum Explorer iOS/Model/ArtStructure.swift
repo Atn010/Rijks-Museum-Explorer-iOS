@@ -6,9 +6,19 @@
 //  Copyright © 2019 atn010.com. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import DeepDiff
 
-class ArtStructure: Hashable{
+class ArtStructure: DiffAware{
+	var diffId: Int
+	
+	static func compareContent(_ a: ArtStructure, _ b: ArtStructure) -> Bool {
+		return a.id == b.id &&
+			a.shortName == b.shortName &&
+			a.longName == b.longName &&
+			a.imageURL == b.imageURL
+	}
+	
 	var id:String
 	var shortName:String
 	var longName:String
@@ -19,6 +29,7 @@ class ArtStructure: Hashable{
 		self.shortName = shortName
 		self.longName = longName
 		self.imageURL = imageURL
+		diffId = longName.count * id.count * shortName.count
 	}
 	
 	static func == (lhs: ArtStructure, rhs: ArtStructure) -> Bool {

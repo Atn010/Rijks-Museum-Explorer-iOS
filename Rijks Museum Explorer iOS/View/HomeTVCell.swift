@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeTVCell: UITableViewCell {
 
@@ -17,6 +18,14 @@ class HomeTVCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+	
+	override func prepareForReuse() {
+		super.prepareForReuse()
+		
+		//mainImageView.af_cancelImageRequest() // NOTE: - Using AlamofireImage
+		artImage.kf.cancelDownloadTask()
+		artImage.image = nil
+	}
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

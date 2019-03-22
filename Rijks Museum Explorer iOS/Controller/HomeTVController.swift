@@ -8,12 +8,15 @@
 
 import UIKit
 import KYDrawerController
+
 import Kingfisher
+import DeepDiff
 
 class HomeTVController: UITableViewController {
 	
 	let userStatus = UserStatusSIngleton.shared
 	let artObject = ArtObjects.shared
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +30,27 @@ class HomeTVController: UITableViewController {
 		
 		if artObject.artList.isEmpty {
 			loadDataList(dataURLString: "\(artObject.listURLString)\(artObject.pagination)") { (sucess, newArt) in
+				if sucess{
+				let newItems:[ArtStructure] = newArt
 				self.artObject.pagination += 1
-				self.artObject.artList = newArt
+				
+				
+				let changes = diff(old: self.artObject.artList, new: newItems)
+				//self.programList = tempKegiatan
+				
+				DispatchQueue.main.async {
+					self.tableView.reload(changes: changes, section: 0, insertionAnimation: .fade, deletionAnimation: .fade, replacementAnimation: .fade, updateData: {
+						self.artObject.artList = newItems
+						
+					}, completion: { (item) in
+						self.artObject.pagination += 1
+						})
+					
+					
+				}
+				}
+				
+				
 			}
 		}
 		
@@ -82,6 +104,39 @@ class HomeTVController: UITableViewController {
 
         return cell
     }
+	
+	override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+		if indexPath.row == artObject.artList.count-1 {
+			loadDataList(dataURLString: "\(artObject.listURLString)\(artObject.pagination)") { (sucess, newArt) in
+				
+				if sucess{
+				
+				var newItems:[ArtStructure] = self.artObject.artList
+				
+				newItems.append(contentsOf: newArt)
+				
+				self.artObject.pagination += 1
+				
+				
+				let changes = diff(old: self.artObject.artList, new: newItems)
+				//self.programList = tempKegiatan
+				
+				DispatchQueue.main.async {
+					self.tableView.reload(changes: changes, section: 0, insertionAnimation: .fade, deletionAnimation: .fade, replacementAnimation: .fade, updateData: {
+						self.artObject.artList = newItems
+						
+					}, completion: { (item) in
+						self.artObject.pagination += 1
+					})
+					
+					
+				}
+				}
+				
+			}
+			
+		}
+	}
 
 
     /*
