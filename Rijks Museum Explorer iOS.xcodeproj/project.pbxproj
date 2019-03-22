@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		0C57FEAE8B9A28F5753DBB66 /* Pods_Rijks_Museum_Explorer_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40525FC783BC0BD0B723CAF9 /* Pods_Rijks_Museum_Explorer_iOS.framework */; };
 		21A9853CB4D70A7B10D42422 /* Pods_Rijks_Museum_Explorer_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6572583D8BB9609BEA8A590 /* Pods_Rijks_Museum_Explorer_iOSUITests.framework */; };
+		2C159EBE2244AFFF000E5782 /* HomeTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C159EBD2244AFFF000E5782 /* HomeTVCell.swift */; };
 		2C9234122244815700923998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9234112244815700923998 /* AppDelegate.swift */; };
-		2C9234142244815700923998 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9234132244815700923998 /* ViewController.swift */; };
 		2C9234172244815700923998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9234152244815700923998 /* Main.storyboard */; };
 		2C92341A2244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C9234182244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodeld */; };
 		2C92341C2244815900923998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C92341B2244815900923998 /* Assets.xcassets */; };
@@ -40,9 +40,9 @@
 /* Begin PBXFileReference section */
 		091E08E537119A08147AC1CE /* Pods-Rijks Museum Explorer iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOSTests/Pods-Rijks Museum Explorer iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		0C0908F4A5807AB4C6DB5119 /* Pods-Rijks Museum Explorer iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOS.debug.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOS/Pods-Rijks Museum Explorer iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2C159EBD2244AFFF000E5782 /* HomeTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVCell.swift; sourceTree = "<group>"; };
 		2C92340E2244815700923998 /* Rijks Museum Explorer iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rijks Museum Explorer iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9234112244815700923998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C9234132244815700923998 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C9234162244815700923998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C9234192244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rijks_Museum_Explorer_iOS.xcdatamodel; sourceTree = "<group>"; };
 		2C92341B2244815900923998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,8 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				2C9234112244815700923998 /* AppDelegate.swift */,
-				2C9234132244815700923998 /* ViewController.swift */,
-				2C9234152244815700923998 /* Main.storyboard */,
+				2CD0F77722449C50007DE763 /* View */,
 				2C92341B2244815900923998 /* Assets.xcassets */,
 				2C92341D2244815900923998 /* LaunchScreen.storyboard */,
 				2C9234202244815900923998 /* Info.plist */,
@@ -145,6 +144,15 @@
 			path = "Rijks Museum Explorer iOSUITests";
 			sourceTree = "<group>";
 		};
+		2CD0F77722449C50007DE763 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C9234152244815700923998 /* Main.storyboard */,
+				2C159EBD2244AFFF000E5782 /* HomeTVCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C38E5721205F86E9B940DB09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +173,6 @@
 				8B6B326269C9B85669DDB758 /* Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig */,
 				C14B6DB54D99637EEBC87740 /* Pods-Rijks Museum Explorer iOSUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -411,8 +418,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C9234142244815700923998 /* ViewController.swift in Sources */,
 				2C92341A2244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodeld in Sources */,
+				2C159EBE2244AFFF000E5782 /* HomeTVCell.swift in Sources */,
 				2C9234122244815700923998 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
