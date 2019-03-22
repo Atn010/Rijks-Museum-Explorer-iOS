@@ -1,0 +1,6 @@
+framework module Pods_Rijks_Museum_Explorer_iOSUITests {
+  umbrella header "Pods-Rijks Museum Explorer iOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
