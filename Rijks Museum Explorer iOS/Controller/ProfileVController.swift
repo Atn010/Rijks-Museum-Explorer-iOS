@@ -12,12 +12,22 @@ import KYDrawerController
 class ProfileVController: UIViewController {
 	let userStatus = UserStatusSIngleton.shared
 
-    override func viewDidLoad() {
+	@IBOutlet weak var profilePicture: UIImageView!
+	@IBOutlet weak var userName: UILabel!
+	
+	
+	override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
 		
 		userStatus.currentNavigationLevel = 1
+		
+
+			self.profilePicture.layer.cornerRadius = self.profilePicture.frame.height / 2
+		
+		
+		print("Here")
     }
 	
 	@IBAction func openMenu(_ sender: UIBarButtonItem) {
@@ -30,9 +40,10 @@ class ProfileVController: UIViewController {
 		
 	}
 	
-	func changeToHome(){
-		performSegue(withIdentifier: "toHome", sender: self)
+	@IBAction func logOutClicked(_ sender: UIButton) {
+		
 	}
+	
     /*
     // MARK: - Navigation
 
