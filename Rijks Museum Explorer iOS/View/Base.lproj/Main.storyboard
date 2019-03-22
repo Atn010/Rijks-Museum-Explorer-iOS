@@ -171,7 +171,7 @@
             </objects>
             <point key="canvasLocation" x="-1202" y="-912"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Rijks Museum Explorer-->
         <scene sceneID="Eac-7d-erH">
             <objects>
                 <tableViewController id="63b-5E-QRx" sceneMemberID="viewController">
@@ -223,7 +223,12 @@
                             <outlet property="delegate" destination="63b-5E-QRx" id="tl8-NG-0ev"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Hs5-re-7CA"/>
+                    <navigationItem key="navigationItem" title="Rijks Museum Explorer" id="Hs5-re-7CA">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="jd6-RE-j3w"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="baseline_menu_black_48pt_1x" width="44" id="hrY-IQ-zNx">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="okt-9m-wx0" kind="show" id="moG-7z-FnT"/>
                     </connections>
@@ -232,7 +237,7 @@
             </objects>
             <point key="canvasLocation" x="919.20000000000005" y="-88.605697151424295"/>
         </scene>
-        <!--View Controller-->
+        <!--Rijks Museum Explorer-->
         <scene sceneID="OJu-CY-Ldg">
             <objects>
                 <viewController id="kcn-VG-yK2" sceneMemberID="viewController">
@@ -294,17 +299,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fRn-pn-bTB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lxz-6g-3oA"/>
+                    <navigationItem key="navigationItem" title="Rijks Museum Explorer" id="lxz-6g-3oA">
+                        <barButtonItem key="leftBarButtonItem" image="baseline_menu_black_48pt_1x" id="koM-AO-IaQ">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9dn-8U-NcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="916" y="860"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Detail-->
         <scene sceneID="n1y-se-2h8">
             <objects>
                 <tableViewController id="okt-9m-wx0" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="8Zz-ow-fQz">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="8Zz-ow-fQz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -315,7 +324,7 @@
                                         <rect key="frame" x="0.0" y="35" width="375" height="234"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="643-Cb-92a" id="Z9z-tp-aZn">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="233.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="234"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lqm-rU-jOX">
@@ -337,7 +346,7 @@
                                         <rect key="frame" x="0.0" y="269" width="375" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iQe-qG-eGe" id="jYF-KA-ZqZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knw-fN-g7D">
@@ -363,6 +372,7 @@
                             <outlet property="delegate" destination="okt-9m-wx0" id="rqu-9z-TV4"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Detail" id="7DG-8z-gBt"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehn-6A-2IB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -407,5 +417,6 @@
     </scenes>
     <resources>
         <image name="NoProfile" width="75" height="75"/>
+        <image name="baseline_menu_black_48pt_1x" width="96" height="96"/>
     </resources>
 </document>
