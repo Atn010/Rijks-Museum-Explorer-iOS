@@ -17,7 +17,7 @@ class DrawerMenuTVController: UITableViewController {
 	@IBOutlet weak var profileImage: UIImageView!
 	@IBOutlet weak var greetings: UILabel!
 	
-	let userStatus = UserStatusSIngleton.shared
+	let userStatus = UserStatusSingleton.shared
 	
 	
     override func viewDidLoad() {
@@ -29,9 +29,23 @@ class DrawerMenuTVController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
 		
+		
+	
+		
+		
 		print("Init Drawer")
 		
     }
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		
+		let account = userStatus.account
+		greetings.text = "Hello, \(account.username)"
+		if let profilePic =  account.image{
+			profileImage.image = profilePic
+		}
+	}
 	
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		

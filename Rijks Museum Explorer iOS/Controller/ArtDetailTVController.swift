@@ -7,8 +7,17 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ArtDetailTVController: UITableViewController {
+	
+	@IBOutlet weak var artImage: UIImageView!
+	@IBOutlet weak var artLongTitle: UILabel!
+	
+	let userStatus = UserStatusSingleton.shared
+	let artObject = ArtObjects.shared
+	
+	var index = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +27,34 @@ class ArtDetailTVController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+		
+		DispatchQueue.main.async {
+			
+		
+		self.artImage.kf.indicatorType = .activity
+		self.artImage.kf.setImage(
+			with: self.artObject.artList[self.index].imageURL,
+			placeholder: UIImage.init(color: .white),
+			options: [
+				.transition(.fade(1))
+			])
+		{
+			result in
+			switch result {
+			case .success( _):
+				print("Yey")
+			case .failure( _):
+				print("Nay")
+			}
+		}
+			UIView.setAnimationsEnabled(false)
+			self.tableView.beginUpdates()
+			
+		self.artLongTitle.text = self.artObject.artList[self.index].longName
+		
+			self.tableView.endUpdates()
+			UIView.setAnimationsEnabled(true)
+		}
     }
 
     // MARK: - Table view data source
