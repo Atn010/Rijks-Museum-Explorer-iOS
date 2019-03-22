@@ -18,6 +18,7 @@ class HomeTVController: UITableViewController {
 	let artObject = ArtObjects.shared
 	
 	var selectedIndex = 0
+	var isOffline = false
 	
 	
 	
@@ -31,6 +32,18 @@ class HomeTVController: UITableViewController {
 		// Uncomment the following line to display an Edit button in the navigation bar for this view controller.
 		// self.navigationItem.rightBarButtonItem = self.editButtonItem
 		
+		NotificationCenter.default.addObserver(self, selector: #selector(HomeTVController.networkStatusChanged(_:)), name: NSNotification.Name(ReachabilityStatusChangedNotification), object: nil )
+		NetworkHelper().monitorReachabilityChanges()
+		
+		switch NetworkHelper().connectionStatus() {
+		case .offline:
+			isOffline = true
+			break;
+		case .online(_), .unknown:
+			isOffline = false
+			break;
+		}
+		
 		if !userStatus.getAccountFromCache(){
 			performSegue(withIdentifier: "toLogin", sender: self)
 		}else{
@@ -42,6 +55,10 @@ class HomeTVController: UITableViewController {
 			}
 		}
 		
+	}
+	
+	override func viewDidDisappear(_ animated: Bool) {
+		NotificationCenter.default.removeObserver(self)
 	}
 	
 	@IBAction func openMenu(_ sender: UIBarButtonItem) {
@@ -121,7 +138,7 @@ class HomeTVController: UITableViewController {
 	}
 	
 	override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-		if indexPath.row == artObject.artList.count-1 {
+		if indexPath.row == artObject.artList.count-1 && !isOffline {
 			loadDataList(dataURLString: "\(artObject.listURLString)\(artObject.pagination)") { (sucess, newArt) in
 				
 				if sucess{
@@ -206,6 +223,30 @@ class HomeTVController: UITableViewController {
 	*/
 	
 }
+
+extension HomeTVController {
+	@objc func networkStatusChanged(_ notification: NSNotification ) {
+		let status = NetworkHelper().connectionStatus()
+		print(status)
+		switch status {
+		case .offline:
+			isOffline = true
+			let offlineAlert = UIAlertController(title: "Warning", message: "No internet connection", preferredStyle: UIAlertController.Style.alert)
+			offlineAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+			self.present(offlineAlert,animated: true,completion: nil)
+			break;
+		case .online(.wwan),.unknown, .online(.wiFi):
+			isOffline = false
+				DispatchQueue.main.async {
+					self.tableView.reloadData()
+				}
+			
+			break;
+		}
+		
+	}
+}
+
 
 extension HomeTVController {
 	func loadDataList(dataURLString:String,completion: @escaping (_ isSuccess:Bool, _ artList:[ArtStructure])-> ()) {
