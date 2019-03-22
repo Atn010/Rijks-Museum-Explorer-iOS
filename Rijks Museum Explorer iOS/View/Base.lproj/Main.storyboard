@@ -142,27 +142,34 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLm-YM-BIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20" y="-761.46926536731644"/>
+            <point key="canvasLocation" x="-23" y="-911"/>
         </scene>
-        <!--View Controller-->
+        <!--Drawer Controller-->
         <scene sceneID="3E2-t9-tne">
             <objects>
-                <viewController id="qGv-Kf-XGj" sceneMemberID="viewController">
+                <viewController id="qGv-Kf-XGj" customClass="KYDrawerController" customModule="KYDrawerController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L9o-ZT-Dn9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FFU-ld-8Hb"/>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="mainSegueIdentifier" value="main"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="drawerSegueIdentifier" value="drawer"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="drawerWidth">
+                            <real key="value" value="300"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="MOM-9y-bjE" kind="custom" customClass="KYEmbedDrawerControllerSegue" customModule="KYDrawerController" id="4Fo-05-KET"/>
-                        <segue destination="jSO-Zc-ECe" kind="custom" customClass="KYEmbedMainControllerSegue" customModule="KYDrawerController" id="u5T-rh-FdX"/>
-                        <segue destination="zAm-OV-On6" kind="custom" identifier="profile" customClass="KYEmbedMainControllerSegue" customModule="KYDrawerController" id="WsH-Bh-drj"/>
+                        <segue destination="MOM-9y-bjE" kind="custom" identifier="drawer" customClass="KYEmbedDrawerControllerSegue" customModule="KYDrawerController" id="4Fo-05-KET"/>
+                        <segue destination="jSO-Zc-ECe" kind="custom" identifier="main" customClass="KYEmbedMainControllerSegue" customModule="KYDrawerController" id="u5T-rh-FdX"/>
+                        <segue destination="zAm-OV-On6" kind="custom" identifier="seccond" customClass="KYEmbedMainControllerSegue" customModule="KYDrawerController" id="dXe-53-fMF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OxB-z8-xwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-910" y="-384"/>
+            <point key="canvasLocation" x="-1202" y="-912"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Eac-7d-erH">
@@ -239,7 +246,7 @@
                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="juJ-d6-Z80">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="247.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lud-rt-chL">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoProfile" translatesAutoresizingMaskIntoConstraints="NO" id="lud-rt-chL">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="lud-rt-chL" secondAttribute="height" multiplier="1:1" id="IvQ-5p-JU5"/>
@@ -291,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9dn-8U-NcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="916" y="601.34932533733138"/>
+            <point key="canvasLocation" x="916" y="860"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="n1y-se-2h8">
@@ -377,7 +384,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXY-tY-3G8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.199999999999999" y="601.34932533733138"/>
+            <point key="canvasLocation" x="-23" y="860"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ghd-z1-Jdp">
@@ -398,4 +405,7 @@
             <point key="canvasLocation" x="-20" y="-88.605697151424295"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NoProfile" width="75" height="75"/>
+    </resources>
 </document>
