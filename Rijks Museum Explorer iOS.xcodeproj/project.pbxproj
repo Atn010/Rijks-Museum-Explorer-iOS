@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C9234122244815700923998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9234112244815700923998 /* AppDelegate.swift */; };
+		2C9234142244815700923998 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9234132244815700923998 /* ViewController.swift */; };
+		2C9234172244815700923998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9234152244815700923998 /* Main.storyboard */; };
+		2C92341A2244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C9234182244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodeld */; };
+		2C92341C2244815900923998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C92341B2244815900923998 /* Assets.xcassets */; };
+		2C92341F2244815900923998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C92341D2244815900923998 /* LaunchScreen.storyboard */; };
+		2C92342A2244815900923998 /* Rijks_Museum_Explorer_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9234292244815900923998 /* Rijks_Museum_Explorer_iOSTests.swift */; };
+		2C9234352244815900923998 /* Rijks_Museum_Explorer_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9234342244815900923998 /* Rijks_Museum_Explorer_iOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C9234262244815900923998 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9234062244815700923998 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C92340D2244815700923998;
+			remoteInfo = "Rijks Museum Explorer iOS";
+		};
+		2C9234312244815900923998 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9234062244815700923998 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C92340D2244815700923998;
+			remoteInfo = "Rijks Museum Explorer iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C92340E2244815700923998 /* Rijks Museum Explorer iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rijks Museum Explorer iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9234112244815700923998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C9234132244815700923998 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C9234162244815700923998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C9234192244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rijks_Museum_Explorer_iOS.xcdatamodel; sourceTree = "<group>"; };
+		2C92341B2244815900923998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C92341E2244815900923998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C9234202244815900923998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C9234252244815900923998 /* Rijks Museum Explorer iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rijks Museum Explorer iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9234292244815900923998 /* Rijks_Museum_Explorer_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rijks_Museum_Explorer_iOSTests.swift; sourceTree = "<group>"; };
+		2C92342B2244815900923998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C9234302244815900923998 /* Rijks Museum Explorer iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rijks Museum Explorer iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9234342244815900923998 /* Rijks_Museum_Explorer_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rijks_Museum_Explorer_iOSUITests.swift; sourceTree = "<group>"; };
+		2C9234362244815900923998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C92340B2244815700923998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C9234222244815900923998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C92342D2244815900923998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C9234052244815700923998 = {
+			isa = PBXGroup;
+			children = (
+				2C9234102244815700923998 /* Rijks Museum Explorer iOS */,
+				2C9234282244815900923998 /* Rijks Museum Explorer iOSTests */,
+				2C9234332244815900923998 /* Rijks Museum Explorer iOSUITests */,
+				2C92340F2244815700923998 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C92340F2244815700923998 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C92340E2244815700923998 /* Rijks Museum Explorer iOS.app */,
+				2C9234252244815900923998 /* Rijks Museum Explorer iOSTests.xctest */,
+				2C9234302244815900923998 /* Rijks Museum Explorer iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C9234102244815700923998 /* Rijks Museum Explorer iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2C9234112244815700923998 /* AppDelegate.swift */,
+				2C9234132244815700923998 /* ViewController.swift */,
+				2C9234152244815700923998 /* Main.storyboard */,
+				2C92341B2244815900923998 /* Assets.xcassets */,
+				2C92341D2244815900923998 /* LaunchScreen.storyboard */,
+				2C9234202244815900923998 /* Info.plist */,
+				2C9234182244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodeld */,
+			);
+			path = "Rijks Museum Explorer iOS";
+			sourceTree = "<group>";
+		};
+		2C9234282244815900923998 /* Rijks Museum Explorer iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C9234292244815900923998 /* Rijks_Museum_Explorer_iOSTests.swift */,
+				2C92342B2244815900923998 /* Info.plist */,
+			);
+			path = "Rijks Museum Explorer iOSTests";
+			sourceTree = "<group>";
+		};
+		2C9234332244815900923998 /* Rijks Museum Explorer iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C9234342244815900923998 /* Rijks_Museum_Explorer_iOSUITests.swift */,
+				2C9234362244815900923998 /* Info.plist */,
+			);
+			path = "Rijks Museum Explorer iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C92340D2244815700923998 /* Rijks Museum Explorer iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C9234392244815900923998 /* Build configuration list for PBXNativeTarget "Rijks Museum Explorer iOS" */;
+			buildPhases = (
+				2C92340A2244815700923998 /* Sources */,
+				2C92340B2244815700923998 /* Frameworks */,
+				2C92340C2244815700923998 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rijks Museum Explorer iOS";
+			productName = "Rijks Museum Explorer iOS";
+			productReference = 2C92340E2244815700923998 /* Rijks Museum Explorer iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C9234242244815900923998 /* Rijks Museum Explorer iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C92343C2244815900923998 /* Build configuration list for PBXNativeTarget "Rijks Museum Explorer iOSTests" */;
+			buildPhases = (
+				2C9234212244815900923998 /* Sources */,
+				2C9234222244815900923998 /* Frameworks */,
+				2C9234232244815900923998 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C9234272244815900923998 /* PBXTargetDependency */,
+			);
+			name = "Rijks Museum Explorer iOSTests";
+			productName = "Rijks Museum Explorer iOSTests";
+			productReference = 2C9234252244815900923998 /* Rijks Museum Explorer iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C92342F2244815900923998 /* Rijks Museum Explorer iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C92343F2244815900923998 /* Build configuration list for PBXNativeTarget "Rijks Museum Explorer iOSUITests" */;
+			buildPhases = (
+				2C92342C2244815900923998 /* Sources */,
+				2C92342D2244815900923998 /* Frameworks */,
+				2C92342E2244815900923998 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C9234322244815900923998 /* PBXTargetDependency */,
+			);
+			name = "Rijks Museum Explorer iOSUITests";
+			productName = "Rijks Museum Explorer iOSUITests";
+			productReference = 2C9234302244815900923998 /* Rijks Museum Explorer iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C9234062244815700923998 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = atn010.com;
+				TargetAttributes = {
+					2C92340D2244815700923998 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2C9234242244815900923998 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2C92340D2244815700923998;
+					};
+					2C92342F2244815900923998 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2C92340D2244815700923998;
+					};
+				};
+			};
+			buildConfigurationList = 2C9234092244815700923998 /* Build configuration list for PBXProject "Rijks Museum Explorer iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C9234052244815700923998;
+			productRefGroup = 2C92340F2244815700923998 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C92340D2244815700923998 /* Rijks Museum Explorer iOS */,
+				2C9234242244815900923998 /* Rijks Museum Explorer iOSTests */,
+				2C92342F2244815900923998 /* Rijks Museum Explorer iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C92340C2244815700923998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C92341F2244815900923998 /* LaunchScreen.storyboard in Resources */,
+				2C92341C2244815900923998 /* Assets.xcassets in Resources */,
+				2C9234172244815700923998 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C9234232244815900923998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C92342E2244815900923998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C92340A2244815700923998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9234142244815700923998 /* ViewController.swift in Sources */,
+				2C92341A2244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodeld in Sources */,
+				2C9234122244815700923998 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C9234212244815900923998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C92342A2244815900923998 /* Rijks_Museum_Explorer_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C92342C2244815900923998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9234352244815900923998 /* Rijks_Museum_Explorer_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C9234272244815900923998 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C92340D2244815700923998 /* Rijks Museum Explorer iOS */;
+			targetProxy = 2C9234262244815900923998 /* PBXContainerItemProxy */;
+		};
+		2C9234322244815900923998 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C92340D2244815700923998 /* Rijks Museum Explorer iOS */;
+			targetProxy = 2C9234312244815900923998 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C9234152244815700923998 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C9234162244815700923998 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C92341D2244815900923998 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C92341E2244815900923998 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C9234372244815900923998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C9234382244815900923998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C92343A2244815900923998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7VX669QKF;
+				INFOPLIST_FILE = "Rijks Museum Explorer iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atn010.Rijks-Museum-Explorer-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C92343B2244815900923998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7VX669QKF;
+				INFOPLIST_FILE = "Rijks Museum Explorer iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atn010.Rijks-Museum-Explorer-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C92343D2244815900923998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7VX669QKF;
+				INFOPLIST_FILE = "Rijks Museum Explorer iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atn010.Rijks-Museum-Explorer-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rijks Museum Explorer iOS.app/Rijks Museum Explorer iOS";
+			};
+			name = Debug;
+		};
+		2C92343E2244815900923998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7VX669QKF;
+				INFOPLIST_FILE = "Rijks Museum Explorer iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atn010.Rijks-Museum-Explorer-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rijks Museum Explorer iOS.app/Rijks Museum Explorer iOS";
+			};
+			name = Release;
+		};
+		2C9234402244815900923998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7VX669QKF;
+				INFOPLIST_FILE = "Rijks Museum Explorer iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atn010.Rijks-Museum-Explorer-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Rijks Museum Explorer iOS";
+			};
+			name = Debug;
+		};
+		2C9234412244815900923998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7VX669QKF;
+				INFOPLIST_FILE = "Rijks Museum Explorer iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atn010.Rijks-Museum-Explorer-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Rijks Museum Explorer iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C9234092244815700923998 /* Build configuration list for PBXProject "Rijks Museum Explorer iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C9234372244815900923998 /* Debug */,
+				2C9234382244815900923998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C9234392244815900923998 /* Build configuration list for PBXNativeTarget "Rijks Museum Explorer iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C92343A2244815900923998 /* Debug */,
+				2C92343B2244815900923998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C92343C2244815900923998 /* Build configuration list for PBXNativeTarget "Rijks Museum Explorer iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C92343D2244815900923998 /* Debug */,
+				2C92343E2244815900923998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C92343F2244815900923998 /* Build configuration list for PBXNativeTarget "Rijks Museum Explorer iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C9234402244815900923998 /* Debug */,
+				2C9234412244815900923998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2C9234182244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C9234192244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodel */,
+			);
+			currentVersion = 2C9234192244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodel */;
+			path = Rijks_Museum_Explorer_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2C9234062244815700923998 /* Project object */;
+}
