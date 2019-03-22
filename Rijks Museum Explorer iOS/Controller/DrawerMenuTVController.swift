@@ -1,18 +1,25 @@
 //
-//  HomeTVController.swift
+//  DrawerMenuTVController.swift
 //  Rijks Museum Explorer iOS
 //
-//  Created by user151601 on 3/21/19.
+//  Created by user151601 on 3/22/19.
 //  Copyright © 2019 atn010.com. All rights reserved.
 //
 
 import UIKit
 import KYDrawerController
 
-class HomeTVController: UITableViewController {
+class DrawerMenuTVController: UITableViewController {
+
+	@IBOutlet weak var homeDrawerItem: UITableViewCell!
+	@IBOutlet weak var profileDrawerItem: UITableViewCell!
+	
+	@IBOutlet weak var profileImage: UIImageView!
+	@IBOutlet weak var greetings: UILabel!
 	
 	let userStatus = UserStatusSIngleton.shared
-
+	
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,23 +28,55 @@ class HomeTVController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-		userStatus.currentNavigationLevel = 0
+		
+		print("Init Drawer")
+		
     }
 	
-	@IBAction func openMenu(_ sender: UIBarButtonItem) {
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		
+		let drawer = self.parent as! KYDrawerController
+		
+		
+		
+		if indexPath.row == 1{
+			if userStatus.currentNavigationLevel == 1{
+				drawer.mainSegueIdentifier = "main1"
+				
+				
+				let newMain:UINavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home") as! UINavigationController
+				
+				drawer.mainViewController.dismiss(animated: false, completion: nil)
+				drawer.mainViewController = newMain
+				
+			}
 
-		
-		let drawer = self.navigationController?.parent as! KYDrawerController
-		
-		drawer.setDrawerState(.opened, animated: true)
-		
+			
+			drawer.setDrawerState(.closed, animated: true)
+		}else if indexPath.row == 2{
+			if userStatus.currentNavigationLevel == 0{
+				drawer.mainSegueIdentifier = "main2"
+				
+				
+				//let oldVCNavBar = drawer.mainViewController as! UINavigationController
+				//oldVCNavBar.popToRootViewController(animated: false)
+				
+				
+				let newMain:UINavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Profile") as! UINavigationController
+				
+				drawer.mainViewController.dismiss(animated: false, completion: nil)
+				drawer.mainViewController = newMain
+				
+			}
+			
+			drawer.setDrawerState(.closed, animated: true)
+			
+		}
 		
 	}
-	
-	func changeToProfile(){
-		performSegue(withIdentifier: "toProfile", sender: self)
-	}
-	
+
+    // MARK: - Table view data source
+
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

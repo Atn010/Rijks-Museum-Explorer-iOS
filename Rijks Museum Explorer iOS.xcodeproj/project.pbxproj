@@ -15,6 +15,10 @@
 		2C159EC62244B813000E5782 /* ArtStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C159EC52244B813000E5782 /* ArtStructure.swift */; };
 		2C159EC82244B8EB000E5782 /* AccountStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C159EC72244B8EB000E5782 /* AccountStructure.swift */; };
 		2C159ECA2244BA16000E5782 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C159EC92244BA16000E5782 /* NetworkHelper.swift */; };
+		2C7264252244DB7D0057A79F /* ProfileVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7264242244DB7D0057A79F /* ProfileVController.swift */; };
+		2C7264272244DBB00057A79F /* ArtDetailTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7264262244DBB00057A79F /* ArtDetailTVController.swift */; };
+		2C7264292244DC4A0057A79F /* DrawerMenuTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7264282244DC4A0057A79F /* DrawerMenuTVController.swift */; };
+		2C72642B2244E3590057A79F /* UserStatusSIngleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72642A2244E3590057A79F /* UserStatusSIngleton.swift */; };
 		2C9234122244815700923998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9234112244815700923998 /* AppDelegate.swift */; };
 		2C9234172244815700923998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9234152244815700923998 /* Main.storyboard */; };
 		2C92341A2244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C9234182244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodeld */; };
@@ -51,6 +55,10 @@
 		2C159EC52244B813000E5782 /* ArtStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtStructure.swift; sourceTree = "<group>"; };
 		2C159EC72244B8EB000E5782 /* AccountStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStructure.swift; sourceTree = "<group>"; };
 		2C159EC92244BA16000E5782 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		2C7264242244DB7D0057A79F /* ProfileVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVController.swift; sourceTree = "<group>"; };
+		2C7264262244DBB00057A79F /* ArtDetailTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailTVController.swift; sourceTree = "<group>"; };
+		2C7264282244DC4A0057A79F /* DrawerMenuTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerMenuTVController.swift; sourceTree = "<group>"; };
+		2C72642A2244E3590057A79F /* UserStatusSIngleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatusSIngleton.swift; sourceTree = "<group>"; };
 		2C92340E2244815700923998 /* Rijks Museum Explorer iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rijks Museum Explorer iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9234112244815700923998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C9234162244815700923998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,6 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				2C159EBF2244B40C000E5782 /* HomeTVController.swift */,
+				2C7264242244DB7D0057A79F /* ProfileVController.swift */,
+				2C7264262244DBB00057A79F /* ArtDetailTVController.swift */,
+				2C7264282244DC4A0057A79F /* DrawerMenuTVController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -112,7 +123,6 @@
 		2C159EC42244B7ED000E5782 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2C159EC22244B7C3000E5782 /* ArtObjects.swift */,
 				2C159EC52244B813000E5782 /* ArtStructure.swift */,
 				2C159EC72244B8EB000E5782 /* AccountStructure.swift */,
 			);
@@ -123,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				2C159EC92244BA16000E5782 /* NetworkHelper.swift */,
+				2C159EC22244B7C3000E5782 /* ArtObjects.swift */,
+				2C72642A2244E3590057A79F /* UserStatusSIngleton.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -461,9 +473,13 @@
 				2C159EC02244B40C000E5782 /* HomeTVController.swift in Sources */,
 				2C92341A2244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodeld in Sources */,
 				2C159EBE2244AFFF000E5782 /* HomeTVCell.swift in Sources */,
+				2C7264252244DB7D0057A79F /* ProfileVController.swift in Sources */,
 				2C159EC32244B7C3000E5782 /* ArtObjects.swift in Sources */,
+				2C72642B2244E3590057A79F /* UserStatusSIngleton.swift in Sources */,
 				2C159EC82244B8EB000E5782 /* AccountStructure.swift in Sources */,
+				2C7264292244DC4A0057A79F /* DrawerMenuTVController.swift in Sources */,
 				2C9234122244815700923998 /* AppDelegate.swift in Sources */,
+				2C7264272244DBB00057A79F /* ArtDetailTVController.swift in Sources */,
 				2C159EC62244B813000E5782 /* ArtStructure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

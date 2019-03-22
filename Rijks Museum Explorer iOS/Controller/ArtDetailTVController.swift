@@ -1,17 +1,14 @@
 //
-//  HomeTVController.swift
+//  ArtDetailTVController.swift
 //  Rijks Museum Explorer iOS
 //
-//  Created by user151601 on 3/21/19.
+//  Created by user151601 on 3/22/19.
 //  Copyright © 2019 atn010.com. All rights reserved.
 //
 
 import UIKit
-import KYDrawerController
 
-class HomeTVController: UITableViewController {
-	
-	let userStatus = UserStatusSIngleton.shared
+class ArtDetailTVController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,23 +18,9 @@ class HomeTVController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-		userStatus.currentNavigationLevel = 0
     }
-	
-	@IBAction func openMenu(_ sender: UIBarButtonItem) {
 
-		
-		let drawer = self.navigationController?.parent as! KYDrawerController
-		
-		drawer.setDrawerState(.opened, animated: true)
-		
-		
-	}
-	
-	func changeToProfile(){
-		performSegue(withIdentifier: "toProfile", sender: self)
-	}
-	
+    // MARK: - Table view data source
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

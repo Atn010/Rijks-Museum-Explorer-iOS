@@ -16,7 +16,7 @@ class ArtObjects: NSObject {
 	var artList = [ArtStructure]()
 	
 	private override init() {
-		print("News Object initialized")
+		print("Arts Object initialized")
 		
 	}
 	
