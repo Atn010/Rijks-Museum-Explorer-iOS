@@ -39,14 +39,14 @@ class UserStatusSingleton: NSObject {
 			return false
 		}
 		
-		if !checkAccountValidity(username: account.first!, password: account.last!){
+		if !checkAccountValidity(username: account.first!, password: account.last!, loginAttempt: true){
 			return false
 		}
 		
 		return true
 	}
 	
-	func checkAccountValidity(username:String, password:String) -> Bool {
+	func checkAccountValidity(username:String, password:String, loginAttempt:Bool) -> Bool {
 		let noteRequest:NSFetchRequest<UserAccount> = UserAccount.fetchRequest()
 		
 		do {
@@ -61,14 +61,16 @@ class UserStatusSingleton: NSObject {
 				
 				if dbUser == username && dbPass == password {
 					
-					var dbImage:UIImage?
-					
-					if let profilePicData = dbProfile{
-						dbImage = UIImage.init(data: profilePicData)
+					if loginAttempt {
+						var dbImage:UIImage?
+						
+						if let profilePicData = dbProfile{
+							dbImage = UIImage.init(data: profilePicData)
+						}
+						
+						account = AccountStructure.init(username: dbUser, password: dbPass, image: dbImage)
+						saveSession(username: account.username, password: account.password)
 					}
-					
-					account = AccountStructure.init(username: dbUser, password: dbPass, image: dbImage)
-					saveSession(username: account.username, password: account.password)
 					
 					return true
 				}

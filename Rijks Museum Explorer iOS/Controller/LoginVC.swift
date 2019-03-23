@@ -33,9 +33,9 @@ class LoginVC: UIViewController {
 	}
 	
 	func showErrorMessage(message:String) {
-		let offlineAlert = UIAlertController(title: "Login Failed", message: message, preferredStyle: UIAlertController.Style.alert)
-		offlineAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-		self.present(offlineAlert,animated: true,completion: nil)
+		let loginFailedAlert = UIAlertController(title: "Login Failed", message: message, preferredStyle: UIAlertController.Style.alert)
+		loginFailedAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+		self.present(loginFailedAlert,animated: true,completion: nil)
 	}
 	
 	func attemptToLogin() -> Bool {
@@ -57,7 +57,7 @@ class LoginVC: UIViewController {
 		}else if password.isEmpty{
 			showErrorMessage(message: "Password should not be empty")
 			return false
-		}else if !userStatus.checkAccountValidity(username: username, password: password){
+		}else if !userStatus.checkAccountValidity(username: username, password: password, loginAttempt: true){
 			showErrorMessage(message: "Authentication failed")
 			return false
 		}
