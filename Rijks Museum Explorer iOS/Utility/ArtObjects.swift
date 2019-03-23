@@ -13,6 +13,7 @@ class ArtObjects: NSObject {
 	
 	var pagination = 1
 	var artList = [ArtStructure]()
+	var artDetails = [ArtDetailStructure]()
 	
 	let listURLString = "https://www.rijksmuseum.nl/api/en/collection?key=eIZdWWCT&format=json&imgonly=true&p="
 	

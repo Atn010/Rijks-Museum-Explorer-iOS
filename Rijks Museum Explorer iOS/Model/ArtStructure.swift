@@ -12,13 +12,6 @@ import DeepDiff
 class ArtStructure: DiffAware{
 	var diffId: Int
 	
-	static func compareContent(_ a: ArtStructure, _ b: ArtStructure) -> Bool {
-		return a.id == b.id &&
-			a.shortName == b.shortName &&
-			a.longName == b.longName &&
-			a.imageURL == b.imageURL
-	}
-	
 	var id:String
 	var shortName:String
 	var longName:String
@@ -31,20 +24,22 @@ class ArtStructure: DiffAware{
 		self.imageURL = imageURL
 		diffId = longName.count * id.count * shortName.count
 	}
-	
-	static func == (lhs: ArtStructure, rhs: ArtStructure) -> Bool {
-		return lhs.id == rhs.id &&
-			lhs.shortName == rhs.shortName &&
-			lhs.longName == rhs.longName &&
-			lhs.imageURL == rhs.imageURL
-	}
 
-	
-	func hash(into hasher: inout Hasher) {
-		hasher.combine(id)
-		hasher.combine(shortName)
-		hasher.combine(longName)
-		hasher.combine(imageURL)
+	static func compareContent(_ a: ArtStructure, _ b: ArtStructure) -> Bool {
+		return a.id == b.id &&
+			a.shortName == b.shortName &&
+			a.longName == b.longName &&
+			a.imageURL == b.imageURL
 	}
 	
+}
+
+class ArtDetailStructure{
+	var id:String
+	var description:String
+	
+	init(id:String, description:String) {
+		self.id = id
+		self.description = description
+	}
 }

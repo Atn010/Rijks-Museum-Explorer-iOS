@@ -291,7 +291,7 @@ extension HomeTVController {
 					var count = 0
 					jsonTop.forEach({ (artItem) in
 						print(count)
-						print(artItem["id"] ?? "failed")
+						print(artItem["objectNumber"] ?? "failed")
 						print(artItem["title"] ?? "failing1")
 						print(artItem["longTitle"] ?? "failing2")
 						
@@ -306,7 +306,7 @@ extension HomeTVController {
 						
 						
 						
-						guard let aID = artItem["id"] as? String else { completion(false,artListItems); return}
+						guard let aID = artItem["objectNumber"] as? String else { completion(false,artListItems); return}
 						guard let aTitle = artItem["title"] as? String else { completion(false,artListItems); return}
 						guard let aLongTitle = artItem["longTitle"] as? String else { completion(false,artListItems); return}
 						guard let aImageURL = webImage["url"] as? String else { completion(false,artListItems); return}
