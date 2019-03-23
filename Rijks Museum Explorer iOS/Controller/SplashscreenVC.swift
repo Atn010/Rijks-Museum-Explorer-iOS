@@ -15,13 +15,16 @@ class SplashscreenVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		
+		
+		print("Here I am\n\n\n")
 			
 		DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
 			if self.userStatus.getAccountFromCache() {
 				self.toApp()
 			}else{
 			
-			self.toLogin()
+				self.toLogin()
 			}
 		}
 		

@@ -81,6 +81,8 @@ class DrawerMenuTVController: UITableViewController {
 				drawer.mainViewController.dismiss(animated: false, completion: nil)
 				drawer.mainViewController = newMain
 				
+				print("goingtoProfile?")
+				
 			}
 			
 			drawer.setDrawerState(.closed, animated: true)

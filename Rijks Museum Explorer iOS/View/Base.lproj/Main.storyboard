@@ -38,13 +38,13 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="username"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eef-UA-qeJ">
                                                         <rect key="frame" x="0.0" y="38" width="343" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
@@ -107,7 +107,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="Eef-UA-qeJ" id="BCW-KM-SgN"/>
                         <outlet property="usernameTextField" destination="eGT-46-uB9" id="hRx-wV-aep"/>
-                        <segue destination="qGv-Kf-XGj" kind="showDetail" identifier="toMain" customClass="FadeSegue" customModule="Rijks_Museum_Explorer_iOS" customModuleProvider="target" id="Ig2-bn-nR7"/>
+                        <segue destination="qGv-Kf-XGj" kind="showDetail" identifier="toMain" id="Ig2-bn-nR7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLb-ow-5xO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -141,13 +141,13 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="username"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zEL-Ul-7k7">
                                                         <rect key="frame" x="0.0" y="38" width="343" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
@@ -573,6 +573,7 @@
                     <connections>
                         <outlet property="profilePicture" destination="lud-rt-chL" id="nUh-74-OLz"/>
                         <outlet property="userName" destination="XaZ-ZT-tOH" id="cKs-n3-ghT"/>
+                        <segue destination="jyh-eI-ghB" kind="showDetail" identifier="toLogin" id="EZ6-te-bJ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9dn-8U-NcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -716,7 +717,7 @@
         <image name="baseline_menu_black_48pt_1x" width="144" height="144"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TdG-Ee-gy4"/>
-        <segue reference="Ig2-bn-nR7"/>
+        <segue reference="EZ6-te-bJ7"/>
+        <segue reference="s72-5S-CKS"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -29,7 +29,7 @@ class ProfileVController: UIViewController {
 		
 		userName.text = userStatus.account.username
 		
-		print("Here")
+		print("Here in Profile\n\n\n")
     }
 	
 	@IBAction func openMenu(_ sender: UIBarButtonItem) {
@@ -43,6 +43,9 @@ class ProfileVController: UIViewController {
 	}
 	
 	@IBAction func logOutClicked(_ sender: UIButton) {
+		
+		userStatus.removeSession()
+		performSegue(withIdentifier: "toLogin", sender: self)
 		
 	}
 	

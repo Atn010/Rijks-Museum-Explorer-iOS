@@ -22,6 +22,8 @@ class RegisterVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		
+		hideKeyboardWhenTappedAround()
     }
 	
 	func showErrorMessage(message:String) {
@@ -72,7 +74,7 @@ class RegisterVC: UIViewController {
 		}else if password.isEmpty{
 			showErrorMessage(message: "Password should not be empty")
 			return false
-		}else if checkBoxStatus{
+		}else if !checkBoxStatus{
 			showErrorMessage(message: "Did not accept Term and Condition")
 			return false
 		}else if userStatus.checkAccountValidity(username: username, password: password, loginAttempt: false){
@@ -82,7 +84,7 @@ class RegisterVC: UIViewController {
 		
 		
 		
-		return true
+		return userStatus.registerMewAccount(username: username, password: password)
 	}
 	
 	

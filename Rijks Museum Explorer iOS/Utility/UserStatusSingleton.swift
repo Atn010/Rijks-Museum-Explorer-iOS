@@ -33,7 +33,7 @@ class UserStatusSingleton: NSObject {
 	func getAccountFromCache() -> Bool {
 		let account = UserDefaults.standard.stringArray(forKey: "sessionAccount") ?? [String]()
 		
-		return true
+		//return true
 		
 		if account.count != 2{
 			return false
@@ -59,7 +59,7 @@ class UserStatusSingleton: NSObject {
 				let dbProfile = data.value(forKey: "profile") as? Data
 				
 				
-				if dbUser == username && dbPass == password {
+				if dbUser == username{
 					
 					if loginAttempt {
 						var dbImage:UIImage?
@@ -89,6 +89,48 @@ class UserStatusSingleton: NSObject {
 		}
 	}
 	
+	func registerMewAccount(username:String,password:String) -> Bool{
+		let noteRequest:NSFetchRequest<UserAccount> = UserAccount.fetchRequest()
+		var count = 0
+		
+		do {
+			let result = try managedObjectContext.fetch(noteRequest)
+			for data in result as [NSManagedObject] {
+				if data.value(forKey: "username") as! String == username{
+					count += 1
+				}
+				
+				
+			}
+			
+			if count == 0{
+				
+				let Acc = UserAccount(context: managedObjectContext)
+				
+				Acc.username = username
+				Acc.password = password
+				Acc.profile = nil
+				
+				
+				do{
+					try self.managedObjectContext.save()
+					return true
+				}catch{
+					return false
+				}
+				
+			}
+			
+		} catch {
+			
+			print("Failed Reading")
+			return false
+		}
+		
+		return false
+	}
+
+	
 	
 	func saveSession(username:String,password:String){
 		
@@ -96,7 +138,10 @@ class UserStatusSingleton: NSObject {
 		UserDefaults.standard.set(session, forKey: "sessionAccount")
 	}
 	
-	
+	func removeSession(){
+		
+		UserDefaults.standard.removeObject(forKey: "sessionAccount")
+	}
 	
 	
 }
