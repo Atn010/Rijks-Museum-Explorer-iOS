@@ -15,6 +15,8 @@
 		2C159EC62244B813000E5782 /* ArtStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C159EC52244B813000E5782 /* ArtStructure.swift */; };
 		2C159EC82244B8EB000E5782 /* AccountStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C159EC72244B8EB000E5782 /* AccountStructure.swift */; };
 		2C159ECA2244BA16000E5782 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C159EC92244BA16000E5782 /* NetworkHelper.swift */; };
+		2C69F15F2245C900004058F7 /* SplashscreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C69F15E2245C900004058F7 /* SplashscreenVC.swift */; };
+		2C69F1612245CB53004058F7 /* FadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C69F1602245CB53004058F7 /* FadeSegue.swift */; };
 		2C7264252244DB7D0057A79F /* ProfileVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7264242244DB7D0057A79F /* ProfileVController.swift */; };
 		2C7264272244DBB00057A79F /* ArtDetailTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7264262244DBB00057A79F /* ArtDetailTVController.swift */; };
 		2C7264292244DC4A0057A79F /* DrawerMenuTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7264282244DC4A0057A79F /* DrawerMenuTVController.swift */; };
@@ -56,6 +58,8 @@
 		2C159EC52244B813000E5782 /* ArtStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtStructure.swift; sourceTree = "<group>"; };
 		2C159EC72244B8EB000E5782 /* AccountStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStructure.swift; sourceTree = "<group>"; };
 		2C159EC92244BA16000E5782 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		2C69F15E2245C900004058F7 /* SplashscreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashscreenVC.swift; sourceTree = "<group>"; };
+		2C69F1602245CB53004058F7 /* FadeSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeSegue.swift; sourceTree = "<group>"; };
 		2C7264242244DB7D0057A79F /* ProfileVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVController.swift; sourceTree = "<group>"; };
 		2C7264262244DBB00057A79F /* ArtDetailTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailTVController.swift; sourceTree = "<group>"; };
 		2C7264282244DC4A0057A79F /* DrawerMenuTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerMenuTVController.swift; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 				2C7264242244DB7D0057A79F /* ProfileVController.swift */,
 				2C7264262244DBB00057A79F /* ArtDetailTVController.swift */,
 				2C7264282244DC4A0057A79F /* DrawerMenuTVController.swift */,
+				2C69F15E2245C900004058F7 /* SplashscreenVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				2C159EC22244B7C3000E5782 /* ArtObjects.swift */,
 				2C72642A2244E3590057A79F /* UserStatusSingleton.swift */,
 				2C72642C2244EF850057A79F /* extensions.swift */,
+				2C69F1602245CB53004058F7 /* FadeSegue.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -464,6 +470,7 @@
 				2C159EC02244B40C000E5782 /* HomeTVController.swift in Sources */,
 				2C92341A2244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodeld in Sources */,
 				2C159EBE2244AFFF000E5782 /* HomeTVCell.swift in Sources */,
+				2C69F1612245CB53004058F7 /* FadeSegue.swift in Sources */,
 				2C7264252244DB7D0057A79F /* ProfileVController.swift in Sources */,
 				2C159EC32244B7C3000E5782 /* ArtObjects.swift in Sources */,
 				2C72642B2244E3590057A79F /* UserStatusSingleton.swift in Sources */,
@@ -471,6 +478,7 @@
 				2C159EC82244B8EB000E5782 /* AccountStructure.swift in Sources */,
 				2C7264292244DC4A0057A79F /* DrawerMenuTVController.swift in Sources */,
 				2C9234122244815700923998 /* AppDelegate.swift in Sources */,
+				2C69F15F2245C900004058F7 /* SplashscreenVC.swift in Sources */,
 				2C7264272244DBB00057A79F /* ArtDetailTVController.swift in Sources */,
 				2C159EC62244B813000E5782 /* ArtStructure.swift in Sources */,
 			);
