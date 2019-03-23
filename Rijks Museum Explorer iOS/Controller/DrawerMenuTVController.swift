@@ -58,7 +58,7 @@ class DrawerMenuTVController: UITableViewController {
 				drawer.mainSegueIdentifier = "main1"
 				
 				
-				let newMain:UINavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home") as! UINavigationController
+				let newMain:UINavigationController = UIStoryboard(name: "ArtExplore", bundle: nil).instantiateViewController(withIdentifier: "Home") as! UINavigationController
 				
 				drawer.mainViewController.dismiss(animated: false, completion: nil)
 				drawer.mainViewController = newMain
@@ -76,7 +76,7 @@ class DrawerMenuTVController: UITableViewController {
 				//oldVCNavBar.popToRootViewController(animated: false)
 				
 				
-				let newMain:UINavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Profile") as! UINavigationController
+				let newMain:UINavigationController = UIStoryboard(name: "ArtExplore", bundle: nil).instantiateViewController(withIdentifier: "Profile") as! UINavigationController
 				
 				drawer.mainViewController.dismiss(animated: false, completion: nil)
 				drawer.mainViewController = newMain

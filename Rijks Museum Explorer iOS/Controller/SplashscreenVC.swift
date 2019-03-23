@@ -33,10 +33,20 @@ class SplashscreenVC: UIViewController {
     }
 	
 	func toLogin(){
+		let mainStoryBoard = UIStoryboard(name: "LoginRegister", bundle: nil)
+		let newRoot = mainStoryBoard.instantiateInitialViewController()!
+		let appDelegate = UIApplication.shared.delegate as! AppDelegate
+		appDelegate.window?.rootViewController = newRoot
+		
 		performSegue(withIdentifier: "toLogin", sender: self)
 	}
 	
 	func toApp(){
+		let mainStoryBoard = UIStoryboard(name: "ArtExplore", bundle: nil)
+		let newRoot = mainStoryBoard.instantiateInitialViewController()!
+		let appDelegate = UIApplication.shared.delegate as! AppDelegate
+		appDelegate.window?.rootViewController = newRoot
+		
 		performSegue(withIdentifier: "toApplication", sender: self)
 	}
 

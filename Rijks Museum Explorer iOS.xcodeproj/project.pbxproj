@@ -29,6 +29,8 @@
 		2C92341F2244815900923998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C92341D2244815900923998 /* LaunchScreen.storyboard */; };
 		2C92342A2244815900923998 /* Rijks_Museum_Explorer_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9234292244815900923998 /* Rijks_Museum_Explorer_iOSTests.swift */; };
 		2C9234352244815900923998 /* Rijks_Museum_Explorer_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9234342244815900923998 /* Rijks_Museum_Explorer_iOSUITests.swift */; };
+		2CDABA922246709F00FC10F6 /* LoginRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CDABA912246709F00FC10F6 /* LoginRegister.storyboard */; };
+		2CDABA942246713300FC10F6 /* ArtExplore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CDABA932246713300FC10F6 /* ArtExplore.storyboard */; };
 		2CED5102224642110036F0B0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED5101224642110036F0B0 /* LoginVC.swift */; };
 		2CED5104224642230036F0B0 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED5103224642230036F0B0 /* RegisterVC.swift */; };
 		BD8F7409F04F7E2F9D78FF71 /* Pods_Rijks_Museum_Explorer_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9843450BC214F4C84CD0DE01 /* Pods_Rijks_Museum_Explorer_iOSTests.framework */; };
@@ -80,6 +82,8 @@
 		2C9234302244815900923998 /* Rijks Museum Explorer iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rijks Museum Explorer iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9234342244815900923998 /* Rijks_Museum_Explorer_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rijks_Museum_Explorer_iOSUITests.swift; sourceTree = "<group>"; };
 		2C9234362244815900923998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CDABA912246709F00FC10F6 /* LoginRegister.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginRegister.storyboard; sourceTree = "<group>"; };
+		2CDABA932246713300FC10F6 /* ArtExplore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ArtExplore.storyboard; sourceTree = "<group>"; };
 		2CED5101224642110036F0B0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		2CED5103224642230036F0B0 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		40525FC783BC0BD0B723CAF9 /* Pods_Rijks_Museum_Explorer_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rijks_Museum_Explorer_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,6 +217,8 @@
 		2CD0F77722449C50007DE763 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2CDABA932246713300FC10F6 /* ArtExplore.storyboard */,
+				2CDABA912246709F00FC10F6 /* LoginRegister.storyboard */,
 				2C9234152244815700923998 /* Main.storyboard */,
 				2C159EBD2244AFFF000E5782 /* HomeTVCell.swift */,
 			);
@@ -351,6 +357,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C92341F2244815900923998 /* LaunchScreen.storyboard in Resources */,
+				2CDABA942246713300FC10F6 /* ArtExplore.storyboard in Resources */,
+				2CDABA922246709F00FC10F6 /* LoginRegister.storyboard in Resources */,
 				2C92341C2244815900923998 /* Assets.xcassets in Resources */,
 				2C9234172244815700923998 /* Main.storyboard in Resources */,
 			);

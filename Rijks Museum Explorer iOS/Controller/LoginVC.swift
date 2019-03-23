@@ -18,6 +18,7 @@ class LoginVC: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
 
+		print("Login Page")
         // Do any additional setup after loading the view.
 		
 		hideKeyboardWhenTappedAround()
@@ -27,6 +28,11 @@ class LoginVC: UIViewController {
 	@IBAction func loginClicked(_ sender: UIButton) {
 		
 		if attemptToLogin() {
+			let mainStoryBoard = UIStoryboard(name: "ArtExplore", bundle: nil)
+			let newRoot = mainStoryBoard.instantiateInitialViewController()!
+			let appDelegate = UIApplication.shared.delegate as! AppDelegate
+			appDelegate.window?.rootViewController = newRoot
+			
 			performSegue(withIdentifier: "toMain", sender: self)
 		}
 		

@@ -47,10 +47,13 @@ class RegisterVC: UIViewController {
 		
 		if attemptToRegister() {
 			let registerAlertSuccess = UIAlertController(title: "Register Success", message: "Registration Complete\nTry logging in", preferredStyle: UIAlertController.Style.alert)
-			registerAlertSuccess.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-			self.present(registerAlertSuccess, animated: true) {
-				self.navigationController?.popViewController(animated: true)
-			}
+			registerAlertSuccess.addAction(UIAlertAction(title: "OK", style: .default, handler: { (clicked) in
+				DispatchQueue.main.async {
+					self.navigationController?.popViewController(animated: true)
+				}
+			}))
+			self.present(registerAlertSuccess, animated: true, completion: nil)
+			
 		}
 	
 	}
