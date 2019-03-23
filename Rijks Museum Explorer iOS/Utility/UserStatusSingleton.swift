@@ -27,7 +27,43 @@ class UserStatusSingleton: NSObject {
 	
 	func updateCurrentAccountPicture(image:UIImage){
 		let previousVersion = account
-		account = AccountStructure.init(username: previousVersion.username, password: previousVersion.password, image: image)
+		
+		let noteRequest:NSFetchRequest<UserAccount> = UserAccount.fetchRequest()
+		
+		do {
+			let result = try managedObjectContext.fetch(noteRequest)
+			for data in result as [NSManagedObject] {
+				
+				
+				let dbUser = data.value(forKey: "username") as! String
+
+				
+				
+				if dbUser == previousVersion.username{
+					managedObjectContext.delete(data)
+					do{
+						try managedObjectContext.save()
+					}catch{
+						print("Failed Deletion")
+						return
+					}
+					
+					registerMewAccount(username: previousVersion.username, password: previousVersion.password, image: image)
+					account = AccountStructure.init(username: previousVersion.username, password: previousVersion.password, image: image)
+					return
+				}
+		
+				
+			}
+			
+			return
+			
+		} catch {
+			
+			print("Failed Loading")
+			return
+		}
+		
 	}
 	
 	func getAccountFromCache() -> Bool {
@@ -89,7 +125,7 @@ class UserStatusSingleton: NSObject {
 		}
 	}
 	
-	func registerMewAccount(username:String,password:String) -> Bool{
+	func registerMewAccount(username:String,password:String,image:UIImage?) -> Bool{
 		let noteRequest:NSFetchRequest<UserAccount> = UserAccount.fetchRequest()
 		var count = 0
 		
@@ -109,7 +145,12 @@ class UserStatusSingleton: NSObject {
 				
 				Acc.username = username
 				Acc.password = password
-				Acc.profile = nil
+				
+				if let profileImage = image {
+					Acc.profile = profileImage.jpegData(compressionQuality: 0.1)
+				}else {
+					Acc.profile = nil
+				}
 				
 				
 				do{
@@ -139,7 +180,7 @@ class UserStatusSingleton: NSObject {
 	}
 	
 	func removeSession(){
-		
+		account = .init(username: "Guest", password: "Guest", image: nil)
 		UserDefaults.standard.removeObject(forKey: "sessionAccount")
 	}
 	
