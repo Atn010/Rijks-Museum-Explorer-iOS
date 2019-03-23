@@ -58,6 +58,9 @@
                                                         <state key="normal" title="Login">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="loginClicked:" destination="3nT-CT-iKb" eventType="touchUpInside" id="OpP-mv-B5n"/>
+                                                        </connections>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fcE-2K-9IG">
                                                         <rect key="frame" x="0.0" y="41" width="187.33333333333334" height="32"/>
@@ -102,6 +105,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Rijks Museum Explorer" id="IjS-bu-Aaq"/>
                     <connections>
+                        <outlet property="passwordTextField" destination="Eef-UA-qeJ" id="BCW-KM-SgN"/>
+                        <outlet property="usernameTextField" destination="eGT-46-uB9" id="hRx-wV-aep"/>
                         <segue destination="qGv-Kf-XGj" kind="showDetail" identifier="toMain" customClass="FadeSegue" customModule="Rijks_Museum_Explorer_iOS" customModuleProvider="target" id="Ig2-bn-nR7"/>
                     </connections>
                 </viewController>
@@ -428,7 +433,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="G7l-Nt-sAE">
-                                            <rect key="frame" x="20" y="11.999999999999996" width="335" height="55.666666666666657"/>
+                                            <rect key="frame" x="20" y="12" width="335" height="55.666666666666657"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fTq-Cz-R3N">
                                                     <rect key="frame" x="0.0" y="0.0" width="55.666666666666664" height="55.666666666666664"/>
