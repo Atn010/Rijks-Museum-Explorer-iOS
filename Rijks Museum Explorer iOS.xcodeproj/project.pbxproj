@@ -29,6 +29,8 @@
 		2C92341F2244815900923998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C92341D2244815900923998 /* LaunchScreen.storyboard */; };
 		2C92342A2244815900923998 /* Rijks_Museum_Explorer_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9234292244815900923998 /* Rijks_Museum_Explorer_iOSTests.swift */; };
 		2C9234352244815900923998 /* Rijks_Museum_Explorer_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9234342244815900923998 /* Rijks_Museum_Explorer_iOSUITests.swift */; };
+		2CED5102224642110036F0B0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED5101224642110036F0B0 /* LoginVC.swift */; };
+		2CED5104224642230036F0B0 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED5103224642230036F0B0 /* RegisterVC.swift */; };
 		BD8F7409F04F7E2F9D78FF71 /* Pods_Rijks_Museum_Explorer_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9843450BC214F4C84CD0DE01 /* Pods_Rijks_Museum_Explorer_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		2C9234302244815900923998 /* Rijks Museum Explorer iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rijks Museum Explorer iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9234342244815900923998 /* Rijks_Museum_Explorer_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rijks_Museum_Explorer_iOSUITests.swift; sourceTree = "<group>"; };
 		2C9234362244815900923998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CED5101224642110036F0B0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		2CED5103224642230036F0B0 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		40525FC783BC0BD0B723CAF9 /* Pods_Rijks_Museum_Explorer_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rijks_Museum_Explorer_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6B326269C9B85669DDB758 /* Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOSUITests/Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9843450BC214F4C84CD0DE01 /* Pods_Rijks_Museum_Explorer_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rijks_Museum_Explorer_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +127,8 @@
 				2C7264262244DBB00057A79F /* ArtDetailTVController.swift */,
 				2C7264282244DC4A0057A79F /* DrawerMenuTVController.swift */,
 				2C69F15E2245C900004058F7 /* SplashscreenVC.swift */,
+				2CED5101224642110036F0B0 /* LoginVC.swift */,
+				2CED5103224642230036F0B0 /* RegisterVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -470,12 +476,14 @@
 				2C159EC02244B40C000E5782 /* HomeTVController.swift in Sources */,
 				2C92341A2244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodeld in Sources */,
 				2C159EBE2244AFFF000E5782 /* HomeTVCell.swift in Sources */,
+				2CED5104224642230036F0B0 /* RegisterVC.swift in Sources */,
 				2C69F1612245CB53004058F7 /* FadeSegue.swift in Sources */,
 				2C7264252244DB7D0057A79F /* ProfileVController.swift in Sources */,
 				2C159EC32244B7C3000E5782 /* ArtObjects.swift in Sources */,
 				2C72642B2244E3590057A79F /* UserStatusSingleton.swift in Sources */,
 				2C72642D2244EF850057A79F /* extensions.swift in Sources */,
 				2C159EC82244B8EB000E5782 /* AccountStructure.swift in Sources */,
+				2CED5102224642110036F0B0 /* LoginVC.swift in Sources */,
 				2C7264292244DC4A0057A79F /* DrawerMenuTVController.swift in Sources */,
 				2C9234122244815700923998 /* AppDelegate.swift in Sources */,
 				2C69F15F2245C900004058F7 /* SplashscreenVC.swift in Sources */,
