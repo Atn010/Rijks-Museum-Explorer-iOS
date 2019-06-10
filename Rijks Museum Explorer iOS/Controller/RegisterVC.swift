@@ -87,7 +87,7 @@ class RegisterVC: UIViewController {
 		
 		
 		
-		return userStatus.registerMewAccount(username: username, password: password, image: nil)
+		return userStatus.registerNewAccount(username: username, password: password, image: nil)
 	}
 	
 	

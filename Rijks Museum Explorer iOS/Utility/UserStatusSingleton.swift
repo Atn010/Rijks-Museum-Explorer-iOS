@@ -48,7 +48,10 @@ class UserStatusSingleton: NSObject {
 						return
 					}
 					
-					registerMewAccount(username: previousVersion.username, password: previousVersion.password, image: image)
+                    if false == registerNewAccount(username: previousVersion.username, password: previousVersion.password, image: image) {
+                        return
+                    }
+                    
 					account = AccountStructure.init(username: previousVersion.username, password: previousVersion.password, image: image)
 					return
 				}
@@ -125,7 +128,7 @@ class UserStatusSingleton: NSObject {
 		}
 	}
 	
-	func registerMewAccount(username:String,password:String,image:UIImage?) -> Bool{
+	func registerNewAccount(username:String,password:String,image:UIImage?) -> Bool{
 		let noteRequest:NSFetchRequest<UserAccount> = UserAccount.fetchRequest()
 		var count = 0
 		
