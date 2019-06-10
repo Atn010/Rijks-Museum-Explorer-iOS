@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import KYDrawerController
-
 import Kingfisher
 import DeepDiff
 
@@ -32,6 +30,9 @@ class HomeTVController: UITableViewController {
 		
 		// Uncomment the following line to display an Edit button in the navigation bar for this view controller.
 		// self.navigationItem.rightBarButtonItem = self.editButtonItem
+
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
 		
 		NotificationCenter.default.addObserver(self, selector: #selector(HomeTVController.networkStatusChanged(_:)), name: NSNotification.Name(ReachabilityStatusChangedNotification), object: nil )
 		NetworkHelper().monitorReachabilityChanges()
@@ -60,16 +61,6 @@ class HomeTVController: UITableViewController {
 	
 	override func viewDidDisappear(_ animated: Bool) {
 		NotificationCenter.default.removeObserver(self)
-	}
-	
-	@IBAction func openMenu(_ sender: UIBarButtonItem) {
-		
-		
-		let drawer = self.navigationController?.parent as! KYDrawerController
-		
-		drawer.setDrawerState(.opened, animated: true)
-		
-		
 	}
 	
 	fileprivate func initializeArtObjects() {
@@ -224,6 +215,13 @@ class HomeTVController: UITableViewController {
 	*/
 	
 }
+
+extension HomeTVController: UIGestureRecognizerDelegate {
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return self.navigationController?.viewControllers.count ?? 0 > 1
+    }
+}
+
 
 extension HomeTVController {
 	@objc func networkStatusChanged(_ notification: NSNotification ) {

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import KYDrawerController
 
 class ProfileVController: UIViewController {
 	let userStatus = UserStatusSingleton.shared
@@ -31,16 +30,6 @@ class ProfileVController: UIViewController {
 		
 		print("Here in Profile\n\n\n")
     }
-	
-	@IBAction func openMenu(_ sender: UIBarButtonItem) {
-		
-		
-		let drawer = self.navigationController?.parent as! KYDrawerController
-		
-		drawer.setDrawerState(.opened, animated: true)
-		
-		
-	}
 	
 	@IBAction func logOutClicked(_ sender: UIButton) {
 		let mainStoryBoard = UIStoryboard(name: "LoginRegister", bundle: nil)

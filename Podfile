@@ -6,7 +6,6 @@ target 'Rijks Museum Explorer iOS' do
   use_frameworks!
 
   # Pods for Rijks Museum Explorer iOS
-pod 'KYDrawerController'
 pod 'Kingfisher'
 pod 'DeepDiff'
 pod 'RxSwift'
