@@ -41,6 +41,8 @@ class HomeTVController: UIViewController {
         
         artTable.delegate = self
         artTable.dataSource = self
+        
+        artTable.register(UINib(nibName: "ArtCell", bundle: nil), forCellReuseIdentifier: "Cell")
 		
 		NotificationCenter.default.addObserver(self, selector: #selector(HomeTVController.networkStatusChanged(_:)), name: NSNotification.Name(ReachabilityStatusChangedNotification), object: nil )
 		NetworkHelper().monitorReachabilityChanges()
@@ -122,7 +124,7 @@ extension HomeTVController: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! HomeTVCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ArtCell
         
         cell.artImage.kf.indicatorType = .activity
         cell.artImage.kf.setImage(

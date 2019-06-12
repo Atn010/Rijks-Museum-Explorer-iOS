@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C159EBE2244AFFF000E5782 /* HomeTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C159EBD2244AFFF000E5782 /* HomeTVCell.swift */; };
 		2C159EC02244B40C000E5782 /* HomeTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C159EBF2244B40C000E5782 /* HomeTVController.swift */; };
 		2C159EC32244B7C3000E5782 /* ArtObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C159EC22244B7C3000E5782 /* ArtObjects.swift */; };
 		2C159EC62244B813000E5782 /* ArtStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C159EC52244B813000E5782 /* ArtStructure.swift */; };
@@ -32,6 +31,8 @@
 		2CED5104224642230036F0B0 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED5103224642230036F0B0 /* RegisterVC.swift */; };
 		7AC7DF20AD8D5D1AECBC153C /* Pods_Rijks_Museum_Explorer_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3033F32D199A1AF59FFEA7AD /* Pods_Rijks_Museum_Explorer_iOSTests.framework */; };
 		C2109C3EE188E56FDD4395C4 /* Pods_Rijks_Museum_Explorer_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDD2E2C36588ED375106A3 /* Pods_Rijks_Museum_Explorer_iOSUITests.framework */; };
+		EEF8E80C22B09A110075A220 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF8E80A22B09A110075A220 /* ArtCell.swift */; };
+		EEF8E80D22B09A110075A220 /* ArtCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF8E80B22B09A110075A220 /* ArtCell.xib */; };
 		FC90B5B5839FE4B4C9465FF1 /* Pods_Rijks_Museum_Explorer_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF92EB0338F4CFB2D65DD0FB /* Pods_Rijks_Museum_Explorer_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +58,6 @@
 		08E570DE587494B4D58AEC11 /* Pods-Rijks Museum Explorer iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOSUITests/Pods-Rijks Museum Explorer iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1DE2AD2185DAC14C301AA04A /* Pods-Rijks Museum Explorer iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOS.release.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOS/Pods-Rijks Museum Explorer iOS.release.xcconfig"; sourceTree = "<group>"; };
 		22CDD2E2C36588ED375106A3 /* Pods_Rijks_Museum_Explorer_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rijks_Museum_Explorer_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C159EBD2244AFFF000E5782 /* HomeTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVCell.swift; sourceTree = "<group>"; };
 		2C159EBF2244B40C000E5782 /* HomeTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVController.swift; sourceTree = "<group>"; };
 		2C159EC22244B7C3000E5782 /* ArtObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjects.swift; sourceTree = "<group>"; };
 		2C159EC52244B813000E5782 /* ArtStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtStructure.swift; sourceTree = "<group>"; };
@@ -91,6 +91,8 @@
 		8528FB7DB3D5FB0B69E08038 /* Pods-Rijks Museum Explorer iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOSTests/Pods-Rijks Museum Explorer iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A77F836F3586A8D4608FACC /* Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOSUITests/Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF92EB0338F4CFB2D65DD0FB /* Pods_Rijks_Museum_Explorer_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rijks_Museum_Explorer_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF8E80A22B09A110075A220 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
+		EEF8E80B22B09A110075A220 /* ArtCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +229,8 @@
 				2CDABA932246713300FC10F6 /* ArtExplore.storyboard */,
 				2CDABA912246709F00FC10F6 /* LoginRegister.storyboard */,
 				2C9234152244815700923998 /* Main.storyboard */,
-				2C159EBD2244AFFF000E5782 /* HomeTVCell.swift */,
+				EEF8E80A22B09A110075A220 /* ArtCell.swift */,
+				EEF8E80B22B09A110075A220 /* ArtCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				2C92341F2244815900923998 /* LaunchScreen.storyboard in Resources */,
 				2CDABA942246713300FC10F6 /* ArtExplore.storyboard in Resources */,
 				2CDABA922246709F00FC10F6 /* LoginRegister.storyboard in Resources */,
+				EEF8E80D22B09A110075A220 /* ArtCell.xib in Resources */,
 				2C92341C2244815900923998 /* Assets.xcassets in Resources */,
 				2C9234172244815700923998 /* Main.storyboard in Resources */,
 			);
@@ -471,10 +475,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF8E80C22B09A110075A220 /* ArtCell.swift in Sources */,
 				2C159ECA2244BA16000E5782 /* NetworkHelper.swift in Sources */,
 				2C159EC02244B40C000E5782 /* HomeTVController.swift in Sources */,
 				2C92341A2244815700923998 /* Rijks_Museum_Explorer_iOS.xcdatamodeld in Sources */,
-				2C159EBE2244AFFF000E5782 /* HomeTVCell.swift in Sources */,
 				2CED5104224642230036F0B0 /* RegisterVC.swift in Sources */,
 				2C69F1612245CB53004058F7 /* FadeSegue.swift in Sources */,
 				2C7264252244DB7D0057A79F /* ProfileVController.swift in Sources */,
