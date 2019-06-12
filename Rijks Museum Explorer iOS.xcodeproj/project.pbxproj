@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,7 +19,6 @@
 		2C69F1612245CB53004058F7 /* FadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C69F1602245CB53004058F7 /* FadeSegue.swift */; };
 		2C7264252244DB7D0057A79F /* ProfileVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7264242244DB7D0057A79F /* ProfileVController.swift */; };
 		2C7264272244DBB00057A79F /* ArtDetailTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7264262244DBB00057A79F /* ArtDetailTVController.swift */; };
-		2C7264292244DC4A0057A79F /* DrawerMenuTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7264282244DC4A0057A79F /* DrawerMenuTVController.swift */; };
 		2C72642B2244E3590057A79F /* UserStatusSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72642A2244E3590057A79F /* UserStatusSingleton.swift */; };
 		2C72642D2244EF850057A79F /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72642C2244EF850057A79F /* extensions.swift */; };
 		2C9234122244815700923998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9234112244815700923998 /* AppDelegate.swift */; };
@@ -66,7 +65,6 @@
 		2C69F1602245CB53004058F7 /* FadeSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeSegue.swift; sourceTree = "<group>"; };
 		2C7264242244DB7D0057A79F /* ProfileVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVController.swift; sourceTree = "<group>"; };
 		2C7264262244DBB00057A79F /* ArtDetailTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailTVController.swift; sourceTree = "<group>"; };
-		2C7264282244DC4A0057A79F /* DrawerMenuTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerMenuTVController.swift; sourceTree = "<group>"; };
 		2C72642A2244E3590057A79F /* UserStatusSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatusSingleton.swift; sourceTree = "<group>"; };
 		2C72642C2244EF850057A79F /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		2C92340E2244815700923998 /* Rijks Museum Explorer iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rijks Museum Explorer iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,7 +127,6 @@
 				2C159EBF2244B40C000E5782 /* HomeTVController.swift */,
 				2C7264242244DB7D0057A79F /* ProfileVController.swift */,
 				2C7264262244DBB00057A79F /* ArtDetailTVController.swift */,
-				2C7264282244DC4A0057A79F /* DrawerMenuTVController.swift */,
 				2C69F15E2245C900004058F7 /* SplashscreenVC.swift */,
 				2CED5101224642110036F0B0 /* LoginVC.swift */,
 				2CED5103224642230036F0B0 /* RegisterVC.swift */,
@@ -320,13 +317,16 @@
 				TargetAttributes = {
 					2C92340D2244815700923998 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					2C9234242244815900923998 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 2C92340D2244815700923998;
 					};
 					2C92342F2244815900923998 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 2C92340D2244815700923998;
 					};
 				};
@@ -387,20 +387,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Rijks Museum Explorer iOS/Pods-Rijks Museum Explorer iOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DeepDiff/DeepDiff.framework",
-				"${BUILT_PRODUCTS_DIR}/KYDrawerController/KYDrawerController.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Rijks Museum Explorer iOS/Pods-Rijks Museum Explorer iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeepDiff.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYDrawerController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Rijks Museum Explorer iOS/Pods-Rijks Museum Explorer iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -492,7 +483,6 @@
 				2C72642D2244EF850057A79F /* extensions.swift in Sources */,
 				2C159EC82244B8EB000E5782 /* AccountStructure.swift in Sources */,
 				2CED5102224642110036F0B0 /* LoginVC.swift in Sources */,
-				2C7264292244DC4A0057A79F /* DrawerMenuTVController.swift in Sources */,
 				2C9234122244815700923998 /* AppDelegate.swift in Sources */,
 				2C69F15F2245C900004058F7 /* SplashscreenVC.swift in Sources */,
 				2C7264272244DBB00057A79F /* ArtDetailTVController.swift in Sources */,
@@ -602,7 +592,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -657,7 +647,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -681,7 +671,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atn010.Rijks-Museum-Explorer-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -700,7 +690,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atn010.Rijks-Museum-Explorer-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -721,7 +711,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atn010.Rijks-Museum-Explorer-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rijks Museum Explorer iOS.app/Rijks Museum Explorer iOS";
 			};
@@ -743,7 +733,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atn010.Rijks-Museum-Explorer-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rijks Museum Explorer iOS.app/Rijks Museum Explorer iOS";
 			};
@@ -764,7 +754,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atn010.Rijks-Museum-Explorer-iOSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Rijks Museum Explorer iOS";
 			};
@@ -785,7 +775,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atn010.Rijks-Museum-Explorer-iOSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Rijks Museum Explorer iOS";
 			};
