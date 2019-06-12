@@ -9,16 +9,21 @@
 import UIKit
 import Kingfisher
 import DeepDiff
+import RxSwift
+import RxCocoa
 
-class HomeTVController: UITableViewController {
+class HomeTVController: UIViewController {
 	
-	let userStatus = UserStatusSingleton.shared
+    @IBOutlet weak var artTable: UITableView!
+    
+    let userStatus = UserStatusSingleton.shared
 	let artObject = ArtObjects.shared
 	
 	var selectedIndex = 0
 	var isOffline = false
-	
-	
+    
+    public var arts = PublishSubject<[ArtStructure]>()
+    private let disposeBag = DisposeBag()
 	
 	
 	override func viewDidLoad() {
@@ -33,6 +38,9 @@ class HomeTVController: UITableViewController {
 
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        
+        artTable.delegate = self
+        artTable.dataSource = self
 		
 		NotificationCenter.default.addObserver(self, selector: #selector(HomeTVController.networkStatusChanged(_:)), name: NSNotification.Name(ReachabilityStatusChangedNotification), object: nil )
 		NetworkHelper().monitorReachabilityChanges()
@@ -74,7 +82,7 @@ class HomeTVController: UITableViewController {
 				//self.programList = tempKegiatan
 				
 				DispatchQueue.main.async {
-					self.tableView.reload(changes: changes, section: 0, insertionAnimation: .fade, deletionAnimation: .fade, replacementAnimation: .fade, updateData: {
+                    self.artTable.reload(changes: changes, section: 0, insertionAnimation: .fade, deletionAnimation: .fade, replacementAnimation: .fade, updateData: {
 						self.artObject.artList = newItems
 						
 					}, completion: { (item) in
@@ -89,131 +97,87 @@ class HomeTVController: UITableViewController {
 		}
 	}
 	
-	
-	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return artObject.artList.count
-	}
-	
-	override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-		return 80
-	}
-	
-	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		selectedIndex = indexPath.row
-		performSegue(withIdentifier: "toDetail", sender: self)
-	}
-	
-	
-	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! HomeTVCell
-		
-		cell.artImage.kf.indicatorType = .activity
-		cell.artImage.kf.setImage(
-			with: artObject.artList[indexPath.row].imageURL,
-			placeholder: UIImage.init(color: .white),
-			options: [
-				.transition(.fade(1))
-			])
-		{
-			result in
-			switch result {
-			case .success( _):
-				print("Yey")
-			case .failure( _):
-				print("Nay")
-			}
-		}
-		
-		cell.artName.text = artObject.artList[indexPath.row].shortName
-		
-		return cell
-	}
-	
-	override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-		if indexPath.row == artObject.artList.count-1 && !isOffline {
-			loadDataList(dataURLString: "\(artObject.listURLString)\(artObject.pagination)") { (sucess, newArt) in
-				
-				if sucess{
-					
-					var newItems:[ArtStructure] = self.artObject.artList
-					
-					newItems.append(contentsOf: newArt)
-					
-					self.artObject.pagination += 1
-					
-					
-					let changes = diff(old: self.artObject.artList, new: newItems)
-					//self.programList = tempKegiatan
-					
-					DispatchQueue.main.async {
-						self.tableView.reload(changes: changes, section: 0, insertionAnimation: .fade, deletionAnimation: .fade, replacementAnimation: .fade, updateData: {
-							self.artObject.artList = newItems
-							
-						}, completion: { (item) in
-							self.artObject.pagination += 1
-						})
-						
-						
-					}
-				}
-				
-			}
-			
-		}
-	}
-	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if let vc = segue.destination as? ArtDetailTVController {
 			vc.index = selectedIndex
 		}
 	}
-	
-	
-	/*
-	// Override to support conditional editing of the table view.
-	override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-	// Return false if you do not want the specified item to be editable.
-	return true
-	}
-	*/
-	
-	/*
-	// Override to support editing the table view.
-	override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-	if editingStyle == .delete {
-	// Delete the row from the data source
-	tableView.deleteRows(at: [indexPath], with: .fade)
-	} else if editingStyle == .insert {
-	// Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-	}
-	}
-	*/
-	
-	/*
-	// Override to support rearranging the table view.
-	override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-	
-	}
-	*/
-	
-	/*
-	// Override to support conditional rearranging of the table view.
-	override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-	// Return false if you do not want the item to be re-orderable.
-	return true
-	}
-	*/
-	
-	/*
-	// MARK: - Navigation
-	
-	// In a storyboard-based application, you will often want to do a little preparation before navigation
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-	// Get the new view controller using segue.destination.
-	// Pass the selected object to the new view controller.
-	}
-	*/
-	
+		
+}
+
+extension HomeTVController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return artObject.artList.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndex = indexPath.row
+        performSegue(withIdentifier: "toDetail", sender: self)
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! HomeTVCell
+        
+        cell.artImage.kf.indicatorType = .activity
+        cell.artImage.kf.setImage(
+            with: artObject.artList[indexPath.row].imageURL,
+            placeholder: UIImage.init(color: .white),
+            options: [
+                .transition(.fade(1))
+            ])
+        {
+            result in
+            switch result {
+            case .success( _):
+                print("Yey")
+            case .failure( _):
+                print("Nay")
+            }
+        }
+        
+        cell.artName.text = artObject.artList[indexPath.row].shortName
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == artObject.artList.count-1 && !isOffline {
+            loadDataList(dataURLString: "\(artObject.listURLString)\(artObject.pagination)") { (sucess, newArt) in
+                
+                if sucess{
+                    
+                    var newItems:[ArtStructure] = self.artObject.artList
+                    
+                    newItems.append(contentsOf: newArt)
+                    
+                    self.artObject.pagination += 1
+                    
+                    
+                    let changes = diff(old: self.artObject.artList, new: newItems)
+                    //self.programList = tempKegiatan
+                    
+                    DispatchQueue.main.async {
+                        self.artTable.reload(changes: changes, section: 0, insertionAnimation: .fade, deletionAnimation: .fade, replacementAnimation: .fade, updateData: {
+                            self.artObject.artList = newItems
+                            
+                        }, completion: { (item) in
+                            self.artObject.pagination += 1
+                        })
+                        
+                        
+                    }
+                }
+                
+            }
+            
+        }
+    }
 }
 
 extension HomeTVController: UIGestureRecognizerDelegate {
@@ -237,7 +201,7 @@ extension HomeTVController {
 		case .online(.wwan),.unknown, .online(.wiFi):
 			isOffline = false
 				DispatchQueue.main.async {
-					self.tableView.reloadData()
+					self.artTable.reloadData()
 				}
 			
 			break;
@@ -245,7 +209,6 @@ extension HomeTVController {
 		
 	}
 }
-
 
 extension HomeTVController {
 	func loadDataList(dataURLString:String,completion: @escaping (_ isSuccess:Bool, _ artList:[ArtStructure])-> ()) {

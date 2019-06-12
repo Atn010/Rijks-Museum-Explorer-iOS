@@ -13,7 +13,7 @@
         <!--Rijks Museum Explorer-->
         <scene sceneID="Eac-7d-erH">
             <objects>
-                <tableViewController id="63b-5E-QRx" customClass="HomeTVController" customModule="Rijks_Museum_Explorer_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="63b-5E-QRx" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hn3-n4-Ybz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,17 +68,14 @@
                             <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <action selector="openMenu:" destination="63b-5E-QRx" id="wpt-Xm-ywC"/>
-                                <segue destination="kcn-VG-yK2" kind="show" id="XpK-eg-iqZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="okt-9m-wx0" kind="show" identifier="toDetail" id="moG-7z-FnT"/>
-                    </connections>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k6Z-Zq-5ql" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919.20000000000005" y="-88.605697151424295"/>
+            <point key="canvasLocation" x="860" y="-849"/>
         </scene>
         <!--Rijks Museum Explorer-->
         <scene sceneID="OJu-CY-Ldg">
@@ -155,6 +152,86 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9dn-8U-NcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="919" y="784"/>
+        </scene>
+        <!--Rijks Museum Explorer-->
+        <scene sceneID="pCK-u0-Jls">
+            <objects>
+                <viewController id="Em6-ZB-Zv8" customClass="HomeTVController" customModule="Rijks_Museum_Explorer_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="57m-z9-mxm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YQh-8j-a2P">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="3Qt-g7-i4v" customClass="HomeTVCell" customModule="Rijks_Museum_Explorer_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Qt-g7-i4v" id="jQH-gh-9AB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bKe-ep-cv1">
+                                                    <rect key="frame" x="20" y="12" width="335" height="55.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="er2-gQ-DVw">
+                                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="er2-gQ-DVw" secondAttribute="height" id="Dwo-xI-Bxj"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Art Name " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQV-6R-gm1">
+                                                            <rect key="frame" x="71.5" y="0.0" width="263.5" height="55.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="bKe-ep-cv1" secondAttribute="bottom" constant="12" id="3fL-Vh-Ql6"/>
+                                                <constraint firstItem="bKe-ep-cv1" firstAttribute="top" secondItem="jQH-gh-9AB" secondAttribute="top" constant="12" id="Ub4-yh-0k1"/>
+                                                <constraint firstItem="bKe-ep-cv1" firstAttribute="leading" secondItem="jQH-gh-9AB" secondAttribute="leading" constant="20" symbolic="YES" id="cQf-SV-7U3"/>
+                                                <constraint firstAttribute="trailing" secondItem="bKe-ep-cv1" secondAttribute="trailing" constant="20" symbolic="YES" id="dSy-IK-2jU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="artImage" destination="er2-gQ-DVw" id="62l-W7-EZQ"/>
+                                            <outlet property="artName" destination="uQV-6R-gm1" id="zKr-Oo-i8O"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YQh-8j-a2P" firstAttribute="leading" secondItem="WOv-jS-yP8" secondAttribute="leading" id="Cq3-1V-k0M"/>
+                            <constraint firstItem="WOv-jS-yP8" firstAttribute="trailing" secondItem="YQh-8j-a2P" secondAttribute="trailing" id="GiR-se-xms"/>
+                            <constraint firstAttribute="bottom" secondItem="YQh-8j-a2P" secondAttribute="bottom" id="GvV-yl-Ge6"/>
+                            <constraint firstItem="YQh-8j-a2P" firstAttribute="top" secondItem="WOv-jS-yP8" secondAttribute="top" id="vyn-3K-E7v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WOv-jS-yP8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rijks Museum Explorer" id="WsX-Xq-PSp">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="X2l-Ss-fjd"/>
+                        <barButtonItem key="rightBarButtonItem" title="Profile" image="baseline_account_box_black_48pt_1x" width="44" id="inG-5T-CI0">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="openMenu:" destination="63b-5E-QRx" id="4Qc-Gf-YHd"/>
+                                <segue destination="kcn-VG-yK2" kind="show" id="Nd6-r6-ktl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="artTable" destination="YQh-8j-a2P" id="PnE-da-ahV"/>
+                        <segue destination="okt-9m-wx0" kind="show" identifier="toDetail" id="TKW-lz-PNM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Yj-cO-Sue" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="-89"/>
         </scene>
         <!--Detail-->
         <scene sceneID="n1y-se-2h8">
@@ -267,7 +344,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="63b-5E-QRx" kind="relationship" relationship="rootViewController" id="kBU-Li-w5z"/>
+                        <segue destination="Em6-ZB-Zv8" kind="relationship" relationship="rootViewController" id="bPr-za-09c"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J9B-Ce-QH7" userLabel="First Responder" sceneMemberID="firstResponder"/>
