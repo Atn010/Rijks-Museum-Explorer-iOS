@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C57FEAE8B9A28F5753DBB66 /* Pods_Rijks_Museum_Explorer_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40525FC783BC0BD0B723CAF9 /* Pods_Rijks_Museum_Explorer_iOS.framework */; };
-		21A9853CB4D70A7B10D42422 /* Pods_Rijks_Museum_Explorer_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6572583D8BB9609BEA8A590 /* Pods_Rijks_Museum_Explorer_iOSUITests.framework */; };
 		2C159EBE2244AFFF000E5782 /* HomeTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C159EBD2244AFFF000E5782 /* HomeTVCell.swift */; };
 		2C159EC02244B40C000E5782 /* HomeTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C159EBF2244B40C000E5782 /* HomeTVController.swift */; };
 		2C159EC32244B7C3000E5782 /* ArtObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C159EC22244B7C3000E5782 /* ArtObjects.swift */; };
@@ -32,7 +30,9 @@
 		2CDABA942246713300FC10F6 /* ArtExplore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CDABA932246713300FC10F6 /* ArtExplore.storyboard */; };
 		2CED5102224642110036F0B0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED5101224642110036F0B0 /* LoginVC.swift */; };
 		2CED5104224642230036F0B0 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED5103224642230036F0B0 /* RegisterVC.swift */; };
-		BD8F7409F04F7E2F9D78FF71 /* Pods_Rijks_Museum_Explorer_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9843450BC214F4C84CD0DE01 /* Pods_Rijks_Museum_Explorer_iOSTests.framework */; };
+		7AC7DF20AD8D5D1AECBC153C /* Pods_Rijks_Museum_Explorer_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3033F32D199A1AF59FFEA7AD /* Pods_Rijks_Museum_Explorer_iOSTests.framework */; };
+		C2109C3EE188E56FDD4395C4 /* Pods_Rijks_Museum_Explorer_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDD2E2C36588ED375106A3 /* Pods_Rijks_Museum_Explorer_iOSUITests.framework */; };
+		FC90B5B5839FE4B4C9465FF1 /* Pods_Rijks_Museum_Explorer_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF92EB0338F4CFB2D65DD0FB /* Pods_Rijks_Museum_Explorer_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		091E08E537119A08147AC1CE /* Pods-Rijks Museum Explorer iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOSTests/Pods-Rijks Museum Explorer iOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		0C0908F4A5807AB4C6DB5119 /* Pods-Rijks Museum Explorer iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOS.debug.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOS/Pods-Rijks Museum Explorer iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		04BFDC14D79C244A313A3A6C /* Pods-Rijks Museum Explorer iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOS.debug.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOS/Pods-Rijks Museum Explorer iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		08E570DE587494B4D58AEC11 /* Pods-Rijks Museum Explorer iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOSUITests/Pods-Rijks Museum Explorer iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1DE2AD2185DAC14C301AA04A /* Pods-Rijks Museum Explorer iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOS.release.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOS/Pods-Rijks Museum Explorer iOS.release.xcconfig"; sourceTree = "<group>"; };
+		22CDD2E2C36588ED375106A3 /* Pods_Rijks_Museum_Explorer_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rijks_Museum_Explorer_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C159EBD2244AFFF000E5782 /* HomeTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVCell.swift; sourceTree = "<group>"; };
 		2C159EBF2244B40C000E5782 /* HomeTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVController.swift; sourceTree = "<group>"; };
 		2C159EC22244B7C3000E5782 /* ArtObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjects.swift; sourceTree = "<group>"; };
@@ -84,13 +86,11 @@
 		2CDABA932246713300FC10F6 /* ArtExplore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ArtExplore.storyboard; sourceTree = "<group>"; };
 		2CED5101224642110036F0B0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		2CED5103224642230036F0B0 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
-		40525FC783BC0BD0B723CAF9 /* Pods_Rijks_Museum_Explorer_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rijks_Museum_Explorer_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B6B326269C9B85669DDB758 /* Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOSUITests/Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9843450BC214F4C84CD0DE01 /* Pods_Rijks_Museum_Explorer_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rijks_Museum_Explorer_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6572583D8BB9609BEA8A590 /* Pods_Rijks_Museum_Explorer_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rijks_Museum_Explorer_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C14B6DB54D99637EEBC87740 /* Pods-Rijks Museum Explorer iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOSUITests/Pods-Rijks Museum Explorer iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D375085FE9F1D4FE7842FFB2 /* Pods-Rijks Museum Explorer iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOSTests/Pods-Rijks Museum Explorer iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D81ADFBA4A71EB4B00DF336E /* Pods-Rijks Museum Explorer iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOS.release.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOS/Pods-Rijks Museum Explorer iOS.release.xcconfig"; sourceTree = "<group>"; };
+		3033F32D199A1AF59FFEA7AD /* Pods_Rijks_Museum_Explorer_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rijks_Museum_Explorer_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CD2080433D9D9FEDB0C2F11 /* Pods-Rijks Museum Explorer iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOSTests/Pods-Rijks Museum Explorer iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		8528FB7DB3D5FB0B69E08038 /* Pods-Rijks Museum Explorer iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOSTests/Pods-Rijks Museum Explorer iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A77F836F3586A8D4608FACC /* Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Rijks Museum Explorer iOSUITests/Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF92EB0338F4CFB2D65DD0FB /* Pods_Rijks_Museum_Explorer_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rijks_Museum_Explorer_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C57FEAE8B9A28F5753DBB66 /* Pods_Rijks_Museum_Explorer_iOS.framework in Frameworks */,
+				FC90B5B5839FE4B4C9465FF1 /* Pods_Rijks_Museum_Explorer_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD8F7409F04F7E2F9D78FF71 /* Pods_Rijks_Museum_Explorer_iOSTests.framework in Frameworks */,
+				7AC7DF20AD8D5D1AECBC153C /* Pods_Rijks_Museum_Explorer_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,13 +114,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21A9853CB4D70A7B10D42422 /* Pods_Rijks_Museum_Explorer_iOSUITests.framework in Frameworks */,
+				C2109C3EE188E56FDD4395C4 /* Pods_Rijks_Museum_Explorer_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21C4C5FBE5D99E0C19DBB7E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF92EB0338F4CFB2D65DD0FB /* Pods_Rijks_Museum_Explorer_iOS.framework */,
+				3033F32D199A1AF59FFEA7AD /* Pods_Rijks_Museum_Explorer_iOSTests.framework */,
+				22CDD2E2C36588ED375106A3 /* Pods_Rijks_Museum_Explorer_iOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2C159EC12244B413000E5782 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,7 +173,7 @@
 				2C9234332244815900923998 /* Rijks Museum Explorer iOSUITests */,
 				2C92340F2244815700923998 /* Products */,
 				C6BDFCD4C4D4DA0D54562649 /* Pods */,
-				C38E5721205F86E9B940DB09 /* Frameworks */,
+				21C4C5FBE5D99E0C19DBB7E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,25 +232,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C38E5721205F86E9B940DB09 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				40525FC783BC0BD0B723CAF9 /* Pods_Rijks_Museum_Explorer_iOS.framework */,
-				9843450BC214F4C84CD0DE01 /* Pods_Rijks_Museum_Explorer_iOSTests.framework */,
-				A6572583D8BB9609BEA8A590 /* Pods_Rijks_Museum_Explorer_iOSUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C6BDFCD4C4D4DA0D54562649 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0C0908F4A5807AB4C6DB5119 /* Pods-Rijks Museum Explorer iOS.debug.xcconfig */,
-				D81ADFBA4A71EB4B00DF336E /* Pods-Rijks Museum Explorer iOS.release.xcconfig */,
-				D375085FE9F1D4FE7842FFB2 /* Pods-Rijks Museum Explorer iOSTests.debug.xcconfig */,
-				091E08E537119A08147AC1CE /* Pods-Rijks Museum Explorer iOSTests.release.xcconfig */,
-				8B6B326269C9B85669DDB758 /* Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig */,
-				C14B6DB54D99637EEBC87740 /* Pods-Rijks Museum Explorer iOSUITests.release.xcconfig */,
+				04BFDC14D79C244A313A3A6C /* Pods-Rijks Museum Explorer iOS.debug.xcconfig */,
+				1DE2AD2185DAC14C301AA04A /* Pods-Rijks Museum Explorer iOS.release.xcconfig */,
+				8528FB7DB3D5FB0B69E08038 /* Pods-Rijks Museum Explorer iOSTests.debug.xcconfig */,
+				6CD2080433D9D9FEDB0C2F11 /* Pods-Rijks Museum Explorer iOSTests.release.xcconfig */,
+				9A77F836F3586A8D4608FACC /* Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig */,
+				08E570DE587494B4D58AEC11 /* Pods-Rijks Museum Explorer iOSUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -252,11 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C9234392244815900923998 /* Build configuration list for PBXNativeTarget "Rijks Museum Explorer iOS" */;
 			buildPhases = (
-				4B21C9060DD6C1D35DD7C5AC /* [CP] Check Pods Manifest.lock */,
+				55126FF41B506D8082B0E14D /* [CP] Check Pods Manifest.lock */,
 				2C92340A2244815700923998 /* Sources */,
 				2C92340B2244815700923998 /* Frameworks */,
 				2C92340C2244815700923998 /* Resources */,
-				11A6D1EAF31729EABD89E750 /* [CP] Embed Pods Frameworks */,
+				F35F4BCE743DD87D85CFC5D6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,7 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C92343C2244815900923998 /* Build configuration list for PBXNativeTarget "Rijks Museum Explorer iOSTests" */;
 			buildPhases = (
-				2FCE86C87A17AE774EE7F4B4 /* [CP] Check Pods Manifest.lock */,
+				C2D191FF7AB12A52159AEE2D /* [CP] Check Pods Manifest.lock */,
 				2C9234212244815900923998 /* Sources */,
 				2C9234222244815900923998 /* Frameworks */,
 				2C9234232244815900923998 /* Resources */,
@@ -290,7 +290,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C92343F2244815900923998 /* Build configuration list for PBXNativeTarget "Rijks Museum Explorer iOSUITests" */;
 			buildPhases = (
-				B1627C969D5D295FB099E215 /* [CP] Check Pods Manifest.lock */,
+				B4693A5E4000297319756AB2 /* [CP] Check Pods Manifest.lock */,
 				2C92342C2244815900923998 /* Sources */,
 				2C92342D2244815900923998 /* Frameworks */,
 				2C92342E2244815900923998 /* Resources */,
@@ -381,46 +381,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		11A6D1EAF31729EABD89E750 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Rijks Museum Explorer iOS/Pods-Rijks Museum Explorer iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Rijks Museum Explorer iOS/Pods-Rijks Museum Explorer iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rijks Museum Explorer iOS/Pods-Rijks Museum Explorer iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2FCE86C87A17AE774EE7F4B4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Rijks Museum Explorer iOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4B21C9060DD6C1D35DD7C5AC /* [CP] Check Pods Manifest.lock */ = {
+		55126FF41B506D8082B0E14D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -442,7 +403,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B1627C969D5D295FB099E215 /* [CP] Check Pods Manifest.lock */ = {
+		B4693A5E4000297319756AB2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -462,6 +423,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2D191FF7AB12A52159AEE2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rijks Museum Explorer iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F35F4BCE743DD87D85CFC5D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rijks Museum Explorer iOS/Pods-Rijks Museum Explorer iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rijks Museum Explorer iOS/Pods-Rijks Museum Explorer iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rijks Museum Explorer iOS/Pods-Rijks Museum Explorer iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -659,7 +659,7 @@
 		};
 		2C92343A2244815900923998 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C0908F4A5807AB4C6DB5119 /* Pods-Rijks Museum Explorer iOS.debug.xcconfig */;
+			baseConfigurationReference = 04BFDC14D79C244A313A3A6C /* Pods-Rijks Museum Explorer iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -678,7 +678,7 @@
 		};
 		2C92343B2244815900923998 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D81ADFBA4A71EB4B00DF336E /* Pods-Rijks Museum Explorer iOS.release.xcconfig */;
+			baseConfigurationReference = 1DE2AD2185DAC14C301AA04A /* Pods-Rijks Museum Explorer iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -697,7 +697,7 @@
 		};
 		2C92343D2244815900923998 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D375085FE9F1D4FE7842FFB2 /* Pods-Rijks Museum Explorer iOSTests.debug.xcconfig */;
+			baseConfigurationReference = 8528FB7DB3D5FB0B69E08038 /* Pods-Rijks Museum Explorer iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -719,7 +719,7 @@
 		};
 		2C92343E2244815900923998 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 091E08E537119A08147AC1CE /* Pods-Rijks Museum Explorer iOSTests.release.xcconfig */;
+			baseConfigurationReference = 6CD2080433D9D9FEDB0C2F11 /* Pods-Rijks Museum Explorer iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -741,7 +741,7 @@
 		};
 		2C9234402244815900923998 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B6B326269C9B85669DDB758 /* Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig */;
+			baseConfigurationReference = 9A77F836F3586A8D4608FACC /* Pods-Rijks Museum Explorer iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -762,7 +762,7 @@
 		};
 		2C9234412244815900923998 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C14B6DB54D99637EEBC87740 /* Pods-Rijks Museum Explorer iOSUITests.release.xcconfig */;
+			baseConfigurationReference = 08E570DE587494B4D58AEC11 /* Pods-Rijks Museum Explorer iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
